@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>Invest_Portal_2015</name>
+	<version>1.0</version>
+	<creationDate>25.06.2015</creationDate>
+	<author>Alexey Dolzhenko | LLC "Molniya"</author>
+	<authorEmail>0000_0001@programmerzz.ru</authorEmail>
+	<copyright>Copyright (C) 2015 LLC. All rights reserved.</copyright>
+	<description>TPL_INVEST_PORTAL_XML_DESCRIPTION</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+	</files>
+	<positions>
+		<position>logo</position>
+		<position>debug</position>
+		<position>menu</position>
+		<position>slider</position>
+		<position>obrashenie</position>
+		<position>sixcause</position>
+		<position>mapinv</position>
+		<position>navig</position>
+		<position>projects</position>
+		<position>sobitiya</position>
+		<position>stati</position>
+		<position>stati-2</position>
+		<position>galereya</position>
+		<position>pxslide1</position>
+		<position>pxslide2</position>
+		<position>pxslide3</position>
+		<position>pxvslide</position>
+		<position>pxslide5</position>
+		<position>pxslide6</position>
+		<position>footer</position>
+		<position>mail-responder</position>
+	</positions>
+</extension>

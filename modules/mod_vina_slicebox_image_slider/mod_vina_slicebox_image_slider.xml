@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+	
+<!-- Author Block -->
+	<name>Vina Slicebox Image Slider</name>
+	<author>VinaGecko.com</author>
+	<creationDate>October 17, 2014</creationDate>
+	<copyright>Copyright (C) 2014 VinaGecko.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-3.0.html GNU/GPL</license>
+	<authorEmail>support@vinagecko.com</authorEmail>
+	<authorUrl>http://VinaGecko.com</authorUrl>
+	<version>1.1.0</version>
+	
+	<description>
+		<![CDATA[<div style="border: 1px solid red; border-radius: 7px; padding: 10px;">
+		<strong>Vina Slicebox Image Slider</strong> is a <strong>jQuery 3D Image Slider</strong> module that makes use of <strong>CSS 3D Transforms</strong> and provides a graceful fallback for older browsers that don't support the new properties.<br>
+		<strong>VinaGecko.com</strong> - Premium <a href="http://vinagecko.com/joomla-modules" target="_blank">Joomla Modules</a>, <a href="http://vinagecko.com/joomla-plugins" target="_blank">Joomla Plugins</a>, <a href="http://vinagecko.com/joomla-templates" target="_blank">Joomla Templates</a>.
+		</div>]]>
+	</description>
+
+<!-- Files upload Block -->	
+	<files>
+		<filename module="mod_vina_slicebox_image_slider">mod_vina_slicebox_image_slider.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>samples</folder>
+		<folder>libs</folder>
+		<folder>assets</folder>
+		<folder>languages</folder>
+		<folder>tmpl</folder>
+	</files>
+
+<!-- Languages Block -->
+	<languages>
+		<language tag="en-GB">languages/en-GB.mod_vina_slicebox_image_slider.ini</language>
+	</languages>
+	
+<!-- Config Block -->
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_vina_slicebox_image_slider/libs/elements">
+			<fieldset name="basic">
+				<field
+					name="maxWidth"
+					type="text"
+					default="100%"
+					label="MOD_VINA_SLICEBOX_MODULE_MAX_WIDTH"
+					description="MOD_VINA_SLICEBOX_MODULE_MAX_WIDTH_DESC" />
+				<field
+					name="moduleMargin"
+					type="text"
+					default="0px auto 0px auto"
+					label="MOD_VINA_SLICEBOX_MODULE_MARGIN"
+					description="MOD_VINA_SLICEBOX_MODULE_MARGIN_DESC" />
+				<field
+					name="modulePadding"
+					type="text"
+					default="0px 0px 0px 0px"
+					label="MOD_VINA_SLICEBOX_MODULE_PADDING"
+					description="MOD_VINA_SLICEBOX_MODULE_PADDING_DESC" />
+				<field
+					name="bgImage"
+					type="media" 
+					label="MOD_VINA_SLICEBOX_BGIMAGE" 
+					description="MOD_VINA_SLICEBOX_BGIMAGE_DESC" 
+					size="30"
+					default="" />
+				<field 
+					name="isBgColor" 
+					type="radio" 
+					default="0" 
+					class="btn-group btn-group-yesno"
+					label="MOD_VINA_SLICEBOX_USE_BACKGROUND_COLOR" 
+					description="MOD_VINA_SLICEBOX_USE_BACKGROUND_COLOR_DESC">
+						<option value="0">JNO</option>
+						<option value="1">JYES</option>
+                </field>
+				<field
+					name="bgColor"
+					type="color" 
+					label="MOD_VINA_SLICEBOX_BACKGROUND_COLOR" 
+					description="MOD_VINA_SLICEBOX_BACKGROUND_COLOR_DESC" 
+					size="30"
+					default="#000000" />
+				<field 
+                    name="linkOnImage" 
+                    type="hidden" 
+                    default="0" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_SLICEBOX_LINK_ON_IMAGE" 
+                    description="MOD_VINA_SLICEBOX_LINK_ON_IMAGE_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field 
+                    name="displayCaptions" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_SLICEBOX_DISPLAY_CAPTIONS" 
+                    description="MOD_VINA_SLICEBOX_DISPLAY_CAPTIONS_DESC">
+                        <option value="0">JHIDE</option>
+                        <option value="1">JSHOW</option>
+                </field>
+				<field 
+                    name="resizeImage" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_SLICEBOX_RESIZE_IMAGE" 
+                    description="MOD_VINA_SLICEBOX_RESIZE_IMAGE_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field
+					name="imageWidth"
+					type="text"
+					default="600"
+					label="MOD_VINA_SLICEBOX_IMAGE_WIDTH"
+					description="MOD_VINA_SLICEBOX_IMAGE_WIDTH_DESC" />
+				<field
+					name="imageHeight"
+					type="text"
+					default="300"
+					label="MOD_VINA_SLICEBOX_IMAGE_HEIGHT"
+					description="MOD_VINA_SLICEBOX_IMAGE_HEIGHT_DESC" />
+				<field 
+                    name="shadow" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_SLICEBOX_DISPLAY_SHADOW" 
+                    description="MOD_VINA_SLICEBOX_DISPLAY_SHADOW_DESC">
+                        <option value="0">JHIDE</option>
+                        <option value="1">JSHOW</option>
+                </field>
+				<field 
+                    name="arrows" 
+                    type="list" 
+                    default="1" 
+                    label="MOD_VINA_SLICEBOX_DISPLAY_ARROWS" 
+                    description="MOD_VINA_SLICEBOX_DISPLAY_ARROWS_DESC">
+                        <option value="0">VINA_HIDE</option>
+                        <option value="1">VINA_SHOW_HOVER</option>
+						<option value="2">VINA_SHOW_ALWAYS</option>
+                </field>
+				<field 
+                    name="dots" 
+                    type="list" 
+                    default="2" 
+                    label="MOD_VINA_SLICEBOX_DISPLAY_DOTS" 
+                    description="MOD_VINA_SLICEBOX_DISPLAY_DOTS_DESC">
+                        <option value="0">VINA_HIDE</option>
+                        <option value="1">VINA_SHOW_HOVER</option>
+						<option value="2">VINA_SHOW_ALWAYS</option>
+                </field>
+				
+				<field type="spacer" name="@effect" hr="true" />
+				<field 
+                    name="orientation" 
+                    type="list" 
+                    default="r" 
+                    label="MOD_VINA_SLICEBOX_ORIENTATION" 
+                    description="MOD_VINA_SLICEBOX_ORIENTATION_DESC">
+                        <option value="v">Vertical</option>
+                        <option value="h">Horizontal</option>
+						<option value="r">Random</option>
+                </field>
+				<field
+					name="perspective"
+					type="text"
+					default="1200"
+					label="MOD_VINA_SLICEBOX_PERSPECTIVE"
+					description="MOD_VINA_SLICEBOX_PERSPECTIVE_DESC" />
+				<field
+					name="cuboidsCount"
+					type="text"
+					default="5"
+					label="MOD_VINA_SLICEBOX_CUBOIDS_COUNT"
+					description="MOD_VINA_SLICEBOX_CUBOIDS_COUNT_DESC" />
+				<field 
+                    name="cuboidsRandom" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_SLICEBOX_CUBOIDS_RANDOM" 
+                    description="MOD_VINA_SLICEBOX_CUBOIDS_RANDOM_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field
+					name="maxCuboidsCount"
+					type="text"
+					default="5"
+					label="MOD_VINA_SLICEBOX_MAX_CUBOIDS_COUNT"
+					description="MOD_VINA_SLICEBOX_MAX_CUBOIDS_COUNT_DESC" />
+				<field
+					name="disperseFactor"
+					type="text"
+					default="0"
+					label="MOD_VINA_SLICEBOX_DISPERSE_FACTOR"
+					description="MOD_VINA_SLICEBOX_DISPERSE_FACTOR_DESC" />
+				<field
+					name="colorHiddenSides"
+					type="color" 
+					label="MOD_VINA_SLICEBOX_COLOR_HIDDEN_SLIDES" 
+					description="MOD_VINA_SLICEBOX_COLOR_HIDDEN_SLIDES_DESC" 
+					size="30"
+					default="#222222" />
+				<field
+					name="sequentialFactor"
+					type="text"
+					default="150"
+					label="MOD_VINA_SLICEBOX_SEQUENTIAL_FACTOR"
+					description="MOD_VINA_SLICEBOX_SEQUENTIAL_FACTOR_DESC" />
+				<field
+					name="speed"
+					type="text"
+					default="600"
+					label="MOD_VINA_SLICEBOX_SPEED"
+					description="MOD_VINA_SLICEBOX_SPEED_DESC" />
+				<field 
+                    name="autoplay" 
+                    type="radio" 
+                    default="1" 
+					class="btn-group btn-group-yesno"
+                    label="MOD_VINA_SLICEBOX_AUTOPLAY" 
+                    description="MOD_VINA_SLICEBOX_AUTOPLAY_DESC">
+                        <option value="0">JNO</option>
+                        <option value="1">JYES</option>
+                </field>
+				<field
+					name="interval"
+					type="text"
+					default="3000"
+					label="MOD_VINA_SLICEBOX_INTERVAL"
+					description="MOD_VINA_SLICEBOX_INTERVAL_DESC" />
+			</fieldset>
+			
+			<fieldset name="slider">
+				<field name="slides" type="data" label="Slides" description="" filter="raw" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+						<option value="1">JGLOBAL_USE_GLOBAL</option>
+						<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+						<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

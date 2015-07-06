@@ -1,0 +1,133 @@
+/**
+ * @package    AcyMailing for Joomla!
+ * @version    4.9.3
+ * @author     acyba.com
+ * @copyright  (C) 2009-2015 ACYBA S.A.R.L. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+div.acymailing_module, .acymailing_module div{
+	padding: 0 !important;
+	margin: 0 !important;
+	border-style:none !important;
+}
+
+table.acymailing_form{
+	margin:auto;
+	border:0px !important;
+}
+
+a.acymailing_togglemodule{
+display: block;
+font-size: 16px;
+text-decoration: none;
+color: #FAFAFA;
+padding: 10px 6px;
+border: 1px solid #FFFFFF;
+width: 180px;
+margin: 42px auto;
+/*  background-image: url(../images/convert.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 12px;*/
+-webkit-transition-property: -webkit-transform, text-decoration;
+-ms-transition-property: -ms-transform, text-decoration;
+transition-property: transform, text-decoration;
+-webkit-transition-duration:  0.7s;
+-ms-transition-duration:  0.7s;
+transition-duration: 0.7s;
+}
+
+a.acymailing_togglemodule:hover {
+	-ms-transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+	text-decoration: underline;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+
+.acyfield_name .inputbox, .acyfield_email .inputbox {
+	height: 28px;
+	font-size: 24px;
+	font-family: ArsenalRegular;
+	padding: 2px 5px;
+}
+
+.subbutton {
+	height: 40px;
+	width: 160px;
+	background-color: #9A3680;
+	border:none;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 24px;
+}
+
+.acymailing_mootoolsbutton p{
+	text-align:center;
+}
+
+.acysubbuttons{
+	text-align:center;
+}
+
+img.captchaimagemodule{
+	border:1px solid #dddddd;
+	float: left;
+}
+
+.captchakeymodule .captchafield{
+	margin-top:3px;
+	margin-left:2px;
+}
+
+.acymailing_fulldiv tr, .acymailing_fulldiv td{
+	border:0px;
+}
+
+.acymailing_module_form td {
+	padding-bottom: 5px;
+	vertical-align:top;
+}
+
+div.acymailing_module_error {
+	color: #400;
+	background-color: #fdd;
+	padding: 1em !important;
+	margin-bottom:10px;
+}
+
+div.acymailing_module_success {
+	color: #130;
+	background-color: #dfc;
+	padding: 1em !important;
+	z-index: 10;
+	margin-bottom:10px;
+}
+
+.acymailing_module_form .acymailing_introtext{
+	 padding-bottom:10px;
+	 display:block;
+	   font-size: 15px;
+}
+
+.refreshCaptchaModule{
+	background-image:url(../images/refresh.png);
+	width:16px;
+	height:16px;
+	display:block;
+	float:left;
+	cursor:pointer;
+}
+
+.acymailing_module fieldset{
+	border: solid 1px #ccc;
+	padding: 5px;
+}
+.category_warning{
+	color: red;
+}
+
+.acymailing_fulldiv a.modal{position:static !important;margin:0 !important;width:auto !important;display:inline !important;}

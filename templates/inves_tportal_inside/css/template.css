@@ -1,0 +1,2 @@
+@import "fonts.css"; /* Стиль шрифтов */
+@import "css-1240px.css" only screen and (min-width: 1240px);

@@ -1,0 +1,200 @@
+/*======= BT CONTENT SLIDER ========*/
+.bt-cs {
+	position: relative;
+	border: none;
+}
+.slides_container {
+	overflow: hidden;
+	position: relative;
+}
+.bt-cs h3 {
+	color: #d67901;
+	line-height: 37px;
+	text-indent: 15px;
+	text-transform: uppercase;
+	background: url(../images/bg-header.png) repeat-x;
+	height: 37px;
+	border: 1px solid #cfcfcf;
+	margin: 0 !important;
+}
+
+/*
+	Handles - Next/prev buttons
+*/
+.bt-cs .next,.bt-cs .prev {
+	display: none;
+	width: 40px;
+	height: 100%;
+	top:0;
+	opacity:0.7;
+}
+.bt-cs:hover .next, .bt-cs:hover .prev{
+	display:block;
+}
+.bt-cs .next:hover, .bt-cs .prev:hover{
+	opacity:1;
+}
+.bt-cs a.next {
+	background: url(../images/re-right.png) right center no-repeat !important;
+	text-indent: -9999px;
+	position:absolute;
+	z-index:100;
+	margin:0;
+	padding:0;
+	right:0;
+}
+.bt-cs a.prev {
+	background: url(../images/re-left.png) left center no-repeat !important;
+	text-indent: -9999px;
+	position:absolute;
+	z-index:999;
+	margin:0;
+	padding:0;
+	left:0;
+}
+
+/*bullet */
+.bt-cs .bt_handles {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:101;
+}
+.bt-cs .bt_handles li {
+	float: left;
+	margin: 0 8px!important;
+	list-style:none;
+	padding:0px!important;
+	background:none!important;
+}
+.bt_handles li a {
+	display: block !important;
+	width: 40px;
+	height: 0;
+	padding-top: 40px;
+	background-image: url(../images/pagination2.png);
+	background-position: 0 0;
+	float: left;
+	padding: 40px 0 0 0 !important;
+	overflow: hidden;
+}
+.bt_handles li.current a {
+	background-position: 0 -40px;
+}
+
+/*numbering */
+.bt-cs .bt_handles_num {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:101;
+}
+.bt-cs .bt_handles_num li {
+	float: left;
+	margin: 0 1px!important;
+	list-style:none;
+	padding:0px!important;
+	background:none!important;
+}
+.bt_handles_num li a {
+	display: block !important;
+	width:12px;
+	height:15px;
+	line-height:15px;
+	background:grey;
+	float: left;
+	padding:0!important;
+	overflow: hidden;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	font-size:10px;
+}
+.bt_handles_num li a:hover{
+	opacity:0.8;
+}
+.bt_handles_num li.current a {
+	background:orange;
+}
+
+/*** CSS STYLE FOR ITEM ****/
+.bt-cs .bt-row {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	padding: 8px 0;
+}
+.bt-cs .bt-inner {
+	margin: 0;
+	position: relative;
+	/*padding: 0 10px;*/
+}
+.bt-cs .bt-inner a {text-decoration: none;}
+.bt-cs .bt-inner img {max-width:99%;margin:5px 0px;}
+.bt-cs .bt-inner .bt-title {
+color: #FFFFFF;
+font-weight: bold;
+text-transform: uppercase;
+line-height: 150%;
+display: inline-block;
+position: absolute;
+top: 20px;
+left: 2px;
+font-family: ArsenalRegular;
+text-align: center;
+font-weight: 500;
+width: 99%;
+background-color: rgba(0,0,0,0.7);
+z-index: 1;
+}
+.bt-cs .bt-inner .bt-title:hover{color: #D7CF38;}
+.bt-cs .bt-inner .bt-category {
+clear: both;
+color: #4a4a4a;
+font-weight: bold;
+line-height:150%;
+}
+.bt-cs .bt-center{text-align:center;}
+.bt-cs .bt-extra {clear: both;margin-top: 5px;}
+.bt-cs .bt-date,.bt-cs .bt-author {font-weight: normal;font-size: 80%;}
+.bt-row-separate {margin: 0px 10px;margin-bottom: 15px;}
+
+div.bt-introtext + p.readmore {
+position: absolute;
+bottom: 8px;
+right: -1px;
+text-decoration: none;
+padding: 20px 0px;
+background-color: black;
+text-align: center;
+width: 100%;
+opacity: 0.7;
+}
+
+div.bt-introtext {
+position: absolute;
+color: #DDDDDD;
+bottom: 8px;
+left: 3px;
+padding-left: 4px;
+width: 98%;
+line-height: 20px;
+background-color: rgba(0,0,0,0.7);
+padding-bottom: 6px;
+}
+
+
+
+div.bt-introtext + p.readmore a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+div.bt-introtext + p.readmore a:hover {
+color:#9A3680;
+opacity: 1;
+}
