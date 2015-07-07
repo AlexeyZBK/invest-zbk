@@ -114,7 +114,7 @@ a.k2ReadMore {}
 a.k2ReadMore:hover {}
 
 /* --- Pagination --- */
-div.k2Pagination {padding:8px;margin:24px 0 4px 0;text-align:center;color:#999;}
+div.k2Pagination {padding: 8px;margin:24px 0 4px 0;text-align:center;color:#999;}
 
 /* --- Pagination (additional styling for Joomla! 1.6+) --- */
 div.k2Pagination ul {text-align:center;}
