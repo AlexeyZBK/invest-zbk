@@ -98,7 +98,7 @@ function colorIsLight($color)
 	<![endif]-->
 </head>
 
-<body id="admbg" class="site <?php echo $option . " view-" . $view . " layout-" . $layout . " task-" . $task . " itemid-" . $itemid . " "; ?>">
+<body class="site <?php echo $option . " view-" . $view . " layout-" . $layout . " task-" . $task . " itemid-" . $itemid . " "; ?>">
 	<!-- Container -->
 	<div class="container">
 		<div id="content">
