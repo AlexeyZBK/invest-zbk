@@ -56,7 +56,7 @@ defined('_JEXEC') or die;
 
 			<?php if($this->params->get('catTitle')): ?>
 			<!-- Category title -->
-			<h2><?php echo $this->category->name; ?><?php if($this->params->get('catTitleItemCounter')) echo ' ('.$this->pagination->total.')'; ?></h2>
+			<h2><?php echo $this->category->name; ?><?php if($this->params->get('catTitleItemCounter')) echo ' - '.$this->pagination->total. ' карточек'; ?></h2>
 			<?php endif; ?>
 
 			<?php if($this->params->get('catDescription')): ?>
@@ -148,7 +148,7 @@ defined('_JEXEC') or die;
 				$lastContainer='';
 			?>
 			
-			<div class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->leading)==1) ? '' : ' style="width:'.number_format(100/$this->params->get('num_leading_columns'), 1).'%;"'; ?>>
+			<div class="itemContainer<?php echo $lastContainer; ?>"<?php echo (count($this->leading)==1) ? '' : ' style="width:'.number_format(98/$this->params->get('num_leading_columns'), 1).'%;"'; ?>>
 				<?php
 					// Load category_item.php by default
 					$this->item=$item;

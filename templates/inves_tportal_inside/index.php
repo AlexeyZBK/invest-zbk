@@ -8,6 +8,7 @@ defined('_JEXEC') or die;
 <meta charset="UTF-8">
 <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/template.css"  rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Cuprum&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">
 </head>
 <body>
 <!----Обёртка--><section id="wrapper"><!--Обёртка---->
@@ -24,8 +25,10 @@ defined('_JEXEC') or die;
 </header>
 <!--Шапка из логотипа и меню-->
 <div style="width:100%;height:98px;"></div>
-<main id="contentCom">   
-<jdoc:include type="component" />
+<main id="contentCom">
+<div id="maincontent"><jdoc:include type="component" /></div>
+<aside id="modulesposition" style=""><jdoc:include type="modules" name="mod1" /></aside>
+<aside id="modulesposition" style=""><jdoc:include type="modules" name="mod2" /></aside>
 </main> 
 
 <!-------------------------------------- ФУТЕР ТУТ ВСЕ ПОНЯТНО -------------------------------------->

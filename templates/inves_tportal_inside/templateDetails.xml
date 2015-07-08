@@ -22,22 +22,8 @@
 		<position>logo</position>
 		<position>debug</position>
 		<position>menu</position>
-		<position>slider</position>
-		<position>obrashenie</position>
-		<position>sixcause</position>
-		<position>mapinv</position>
-		<position>navig</position>
-		<position>projects</position>
-		<position>sobitiya</position>
-		<position>stati</position>
-		<position>stati-2</position>
-		<position>galereya</position>
-		<position>pxslide1</position>
-		<position>pxslide2</position>
-		<position>pxslide3</position>
-		<position>pxvslide</position>
-		<position>pxslide5</position>
-		<position>pxslide6</position>
+		<position>mod1</position>
+		<position>mod2</position>
 		<position>footer</position>
 		<position>mail-responder</position>
 	</positions>

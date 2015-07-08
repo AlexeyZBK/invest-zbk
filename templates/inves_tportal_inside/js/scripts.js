@@ -5,7 +5,7 @@ $('div.logotype p img').attr('id', 'logo');
 //$(function() {$('#scroller').delay(1000).fadeOut(400); $.scrollSpeed(30, 2200);});    
 /********************************************************** SCROLLER **********************************************************/
 /********************************************************** PARALLAXXX **********************************************************/
-$(window).scroll(function(){
+/*$(window).scroll(function(){
 	var scrollering = $(this).scrollTop();
 	var first_block = $('#first_block');
 	if(scrollering > first_block.offset().top - $(window).height()){
