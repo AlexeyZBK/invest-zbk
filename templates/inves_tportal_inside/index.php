@@ -27,8 +27,8 @@ defined('_JEXEC') or die;
 <div style="width:100%;height:98px;"></div>
 <main id="contentCom">
 <div id="maincontent"><jdoc:include type="component" /></div>
-<aside id="modulesposition" style=""><jdoc:include type="modules" name="mod1" /></aside>
-<aside id="modulesposition" style=""><jdoc:include type="modules" name="mod2" /></aside>
+<aside id="modulesposition1" style=""><jdoc:include type="modules" name="mod1" /></aside>
+<aside id="modulesposition2" style=""><jdoc:include type="modules" name="mod2" /></aside>
 </main> 
 
 <!-------------------------------------- ФУТЕР ТУТ ВСЕ ПОНЯТНО -------------------------------------->

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.6.0"
+	client="site"
+	method="upgrade">
+	<name>YJ K2 Filter Module</name>
+	<author>YouJoomla.com</author>
+	<creationDate>8-5-2014</creationDate>
+	<license>GNU/GPL</license>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0.8</version>
+	<description>
+		<![CDATA[<style type="text/css" media="all">body {background:#fff;}#wrap1 {padding:10px 0;margin:0 auto;display:block;overflow:hidden;width:100%;height:580px!important;background:#F6F6F6;border:1px solid #DEDEDE;}span.extitle {display:block;clear:both;font-weight:bold;font-family: Arial Narrow, sans-serif;font-size:18px;margin:10px 20px;color:#1e2325!important;text-align:center;padding:5px;background:#DEDEDE;border:5px solid #fff;text-shadow:1px 1px #fff;}.eximg {float:left;clear:right;border:5px solid #fff;margin:0 0 0 18px;}.exinfo{display:block;overflow:hidden;text-align:left;padding:5px 15px 0 0;float:right;font-size:12px;font-weight:bold;width:50%;}</style>
+		<div id="wrap1">
+			<span class="extitle">Youjoomla YJ K2 Filter Module for Joomla 1.6x and UP</span>
+			<a title="Visit the official website!" href="http://www.youjoomla.com" target="_blank">
+				<img class="eximg" src="../modules/mod_yjk2filter/images/yj_extensions.jpg" border="0" alt="Logo" />
+			</a>
+			<div class="exinfo">Thank you for downloading Youjoomla.com extension.
+				<br />
+				To setup your module please hover over the module parameters
+				<br />
+				and follow the instructions.
+				<br />
+				If you need support please post new thread in our
+				<a href="http://www.youjoomla.com/joomla_support/index.php" target="_blank">Forum</a>
+				.
+				<br />
+				Have fun playing with your new extension :).
+				<br />
+				<a href="www.youjoomla.com">Youjoomla.com</a>
+			</div>
+		</div>]]>
+	</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yjk2filter.ini</language>
+		<language tag="en-GB">en-GB.mod_yjk2filter.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yjk2filter">mod_yjk2filter.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>helpers</folder>		
+		<folder>images</folder>
+		<folder>src</folder>
+		<folder>tmpl</folder>
+		<folder>yjme</folder>
+	</files>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_yjk2filter/elements/">
+			<fieldset name="basic">
+				<field type="yjhandler" name="yjhandler" />
+				<field type="yjspacer" default="&lt;strong&gt;MODULE LAYOUT SETTINGS&lt;/strong&gt;" />
+				<field name="module_template" type="yjfolderlist" default="Default" hide_none="blank" label="Select default module template" directory="modules/mod_yjk2filter/tmpl" description="You can create custom layout templates for this module. Simply click the create new template button below and module engine will copy Default template and name it by the name you have selected in creation process.&lt;br /&gt;You could also copy modules/mod_yjk2filter/tmpl/Default folder , rename it to your own template name and edit default.php within your template folder to your liking. &lt;br /&gt;Once you have created your module template , your template name will be visible here.&lt;br /&gt; For template overrides please copy your module template folder to your template/html/mod_yjk2filter/ folder and create custom overides for each module instance. To get you started we have created blank module template name New. Edit Template option can be used to customize the module template files from here." />
+				<field name="module_css" type="yjcss" default="stylesheet.css" hide_none="blank" exclude="index.html|ifie.php" label="Select default module CSS" directory="modules/mod_yjk2filter/css" description="Assign default module CSS file. You can use Edit, Upload or Create new options to customize the CSS files from here." />
+
+				<field type="yjspacer" default="&lt;strong&gt;K2 EXTRA FIELDS&lt;/strong&gt;" />
+				<field name="yjk2filter_groups_filter" type="list" default="1" label="Create extra fields groups filter?" description="Create extra fields groups filter. Extra fields group filter allows you to combine search from more than one  K2 extra fields groups. Note that extra fields names in each group should be same ie:&lt;br /&gt; Group Audi field name Model&lt;br /&gt;Group Bmw field Name Model">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="yjholder" name="yjk2filter_groups_holder"/>
+
+				<field name="yjk2filter_rename_group" type="text" default="" label="K2 Groups label" description="This will be first dropdown field in the  form that contains names of all selected extra fields groups." />
+				<field name="yjk2filter_groups" type="yjsgradio" default="0" label="K2 Groups filter" description="Select one or more extra fields groups">
+					<option value="0">All</option>
+					<option value="1">Select</option>
+				</field>				
+				<field name="yjk2filter_groups_id" type="k2groupsmultiple" default="" label="Select k2 groups to be filtered" description="Select all or specific extra fields groups for which you want to filter an items list" />
+				<field name="yjk2filter_available_group_fields" type="yjsgradio" default="0" label="K2 available fields selection" description="List of available extra fields">
+					<option value="0">All</option>
+					<option value="1">Select</option>
+				</field>				
+				<field name="yjk2filter_available_group_fields_selected" type="k2availablegroupfields" default="" label="Available extra fields" description="Available extra fields - Extra fields that belong to all of the selected groups" />
+				<field name="yjk2filter_groups_field_order" type="textarea" rows="6" cols="56" default="" label="Fields order" description="Order the selected fields. One field per row ie:&lt;br /&gt; Field name 1 &lt;br /&gt;Field name 2 &lt;br /&gt;If left empty K2 default extra field order will take over." />
+				<field name="yjk2filter_groups_connection" type="textarea" rows="6" cols="56" default="" label="Connected searchable fields" description="You can connect only dropdown extra field type so that they can populate each others fields. For example if you have field name Car make and field name Car model you can make connection between them.&lt;br /&gt;One connection per row. ie:&lt;br /&gt;Car make=>Car model&lt;br /&gt;Location=>City" />
+				<field name="yjk2filter_create_groups_range" type="list" default="0" label="Create extra fields groups range?" description="If you have a extra field with numeric values you can setup a range filter for those values">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+				<field type="yjholder" name="yjk2filter_groups_range_holder"/>
+				<field name="yjk2filter_groups_range" type="textarea" rows="6" cols="56" default="" label="Range values for desired field" description="Create range values. One range per row. ie:&lt;br /&gt;Field name 1=>1000-2000|2001-3000|3001-4000&lt;br /&gt;Field name 2=>5000-6000|6001-7000|7001-8000" />
+				
+				<field type="yjholder" name="yjk2filter_fields_holder"/>
+				<field name="yjk2filter_fields_group_id" type="k2fieldsgroup" default="" label="Select group first" description="Select the group for which you want to filter an items list" />				
+				<field name="yjk2filter_extrafields" type="yjsgradio" default="0" label="K2 Extra Fields filter" description="Select all or specific extra fields">
+					<option value="0">All</option>
+					<option value="1">Select</option>
+				</field>
+				<field name="yjk2filter_extrafields_id" type="k2extrafieldsmultiple" default="" label="Select one or more extra fields" description="Select all or specific extra fields for which you want to filter an items list" />
+				<field name="yjk2filter_extrafields_order" type="textarea" rows="6" cols="56" default="" label="Fields order" description="Order the selected fields. One field per row ie:&lt;br /&gt; Field name 1 &lt;br /&gt;Field name 2 &lt;br /&gt;If left empty K2 default extra field order will take over." />				
+				<field name="yjk2filter_extrafields_connection" type="textarea" rows="6" cols="56" default="" label="Connected searchable fields" description="You can connect only dropdown extra field type so that they can populate each others fields. For example if you have field name Car make and field name Car model you can make connection between them.&lt;br /&gt;One connection per row. ie:&lt;br /&gt;Car make=>Car model&lt;br /&gt;Location=>City" />
+				<field name="yjk2filter_create_extrafields_range" type="list" default="0" label="Create extra fields range?" description="If you have a extra field with numeric values you can setup a range filter for those values">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>				
+				<field type="yjholder" name="yjk2filter_extrafields_range_holder"/>
+				<field name="yjk2filter_extrafields_range" type="textarea" rows="6" cols="56" default="" label="Range values for desired field" description="Create range values.One per row ie:&lt;br /&gt;Field name 1=>1000-2000|2001-3000|3001-4000&lt;br /&gt;Field name 2=>5000-6000|6001-7000|7001-8000" />				
+				
+				<field type="yjspacer" default="&lt;strong&gt;MODULE SUFFIX&lt;/strong&gt;" />
+				<field name="moduleclass_sfx" type="text" default=" yjk2filter" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling.Note: CSS style for this class is overriding default module padding and margin. See bottom of module stylesheet.css file" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

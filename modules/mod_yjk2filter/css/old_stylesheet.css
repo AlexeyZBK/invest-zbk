@@ -1,0 +1,85 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - YJ K2 Filter                								||
+|| # Copyright (C) since 2007  Youjoomla.com. All Rights Reserved.      ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+.yjk2filter_holder {
+	display:block;
+	position:relative;
+	overflow:hidden;
+}
+/* CLEARING*/
+.clearnf {
+	clear:both;
+	display:block;
+}
+/* RESET MODULE HOLDER PADDINGS*/
+.yjsquare.yjme, .yjsquare.yjme .yjsquare_in, .yjround.yjme, .yjround.yjme .yjround_in, .module.yjme, .moduletable.yjme {
+	padding:0;
+	margin:0;
+}
+/*****/
+
+.yjk2efieldtitle {
+	width:100px;
+	float:left;
+}
+div.yjk2filter_oholder, div.yjk2f_group {
+	position:relative;
+	float:left;
+	width:180px;
+}
+#yjk2filter_extraFieldsContainer .yjk2filter_oholder select {
+	background:transparent;
+	background-color:transparent;
+	border:1px solid #fff;
+	width:220px;
+	padding:4px 5px;
+	height:24px;
+	border:none;
+	font-size:12px;
+	display:block;
+	font-weight:normal;
+	color:#585858;
+	-webkit-appearance: none;
+	cursor:pointer;
+}
+#yjk2filter_extraFieldsContainer .yjk2filter_oholder select:disabled {
+	color:#adadad;
+	background:#f2f0f0;
+	text-shadow:1px 1px #fff;
+}
+#yjk2filter_extraFieldsContainer textarea,
+#yjk2filter_extraFieldsContainer input[type=text]{
+	border:1px solid #e8e8e8;
+}
+#yjk2filter_extraFieldsContainer .yjk2filter_oholder {
+	width:180px;
+	height:24px;
+	line-height:24px;
+	overflow: hidden;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	padding:0;
+	margin:0;
+	border:1px solid #e8e8e8;
+	background:url(../images/yjk2filter_select.png) no-repeat 155px top;
+}
+#yjk2filter_extraFieldsContainer .button {
+	float:right;
+	cursor:pointer;
+}
+#yjk2filter_extraFieldsContainer .log{
+	color:#c3840b;
+	font-weight:bold;
+	font-style:italic;
+}

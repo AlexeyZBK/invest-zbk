@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - YJ K2 Filter</name>
+	<author>Youjoomla.com</author>
+	<creationDate>8-5-2014</creationDate>
+	<copyright>Copyright (c) since 2007 Youjoomla.com. All rights reserved.</copyright>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0.8</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>
+		<![CDATA[<style type="text/css" media="all">body {background:#fff;}#wrap1 {padding:10px 0;margin:0 auto;display:block;overflow:hidden;width:100%;height:580px!important;background:#F6F6F6;border:1px solid #DEDEDE;}span.extitle {display:block;clear:both;font-weight:bold;font-family: Arial Narrow, sans-serif;font-size:18px;margin:10px 20px;color:#1e2325!important;text-align:center;padding:5px;background:#DEDEDE;border:5px solid #fff;text-shadow:1px 1px #fff;}.eximg {float:left;clear:right;border:5px solid #fff;margin:0 0 0 18px;}.exinfo{display:block;overflow:hidden;text-align:left;padding:5px 15px 0 0;float:right;font-size:12px;font-weight:bold;width:50%;}</style>
+		<div id="wrap1">
+			<span class="extitle">YJ K2 Filter for Joomla 1.6x and UP</span>
+			<a title="Visit the official website!" href="http://www.youjoomla.com" target="_blank">
+				<img class="eximg" src="../plugins/system/yjk2filter/images/yj_extensions.jpg" border="0" alt="Logo" />
+			</a>
+			<div class="exinfo">Thank you for downloading Youjoomla.com extension.
+				<br />
+				To setup your plugin please hover over the plugin parameters
+				<br />
+				and follow the instructions.
+				<br />
+				If you need support please post new thread in our
+				<a href="http://www.youjoomla.com/joomla_support/index.php" target="_blank">Forum</a>
+				.
+				<br />
+				Have fun playing with your new extension :).
+				<br />
+				<a href="www.youjoomla.com">Youjoomla.com</a>
+			</div>
+		</div>]]>
+	</description>
+	<scriptfile>install.script.php</scriptfile>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_yjk2filter.ini</language>
+		<language tag="en-GB">en-GB.plg_system_yjk2filter.sys.ini</language>
+	</languages>
+	<files>
+		<filename plugin="yjk2filter">yjk2filter.php</filename>
+		<filename>install.script.php</filename>
+		<filename>index.html</filename>		
+		<folder>yjk2filter</folder>
+		<folder>images</folder>
+		<folder>k2views</folder>
+	</files>
+</extension>
