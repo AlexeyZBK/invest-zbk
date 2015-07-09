@@ -34,16 +34,6 @@ defined('_JEXEC') or die ('Restricted access');
 	</div>
 	<?php endif; ?>
 
-	<?php if($this->params->get('genericFeedIcon',1)): ?>
-	<!-- RSS feed icon -->
-	<div class="k2FeedIcon">
-		<a href="<?php echo $this->feed; ?>" title="<?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?>">
-			<span><?php echo JText::_('K2_SUBSCRIBE_TO_THIS_RSS_FEED'); ?></span>
-		</a>
-		<div class="clr"></div>
-	</div>
-	<?php endif; ?>
-
 	<?php if(count($this->items)): ?>
         <div class="genericItemList">
             <?php foreach($this->items as $item): ?>
@@ -151,10 +141,10 @@ defined('_JEXEC') or die ('Restricted access');
 
 	<?php else: ?>
         <dl id="system-message">
-            <dt class="notice"><?php echo JText::_('K2_NOTICE'); ?></dt>
-            <dd class="notice message fade">
+            <dt class="notice"><?php echo JText::_('К сожалению по вашему запросу ничего не обнаружено...'); ?></dt>
+            <dd class="notice message fade fuck">
                 <ul>
-                    <li><?php echo JText::_('PLG_K2_YJK2FILTER_NO_RESULTS'); ?></li>
+                    <li><?php echo JText::_('- Попробуйте изменить условия фильтрации контента -'); ?></li>
                 </ul>
             </dd>
         </dl>    

@@ -18,6 +18,7 @@ $all_elements_id = array();
 ?>
 <!-- YJ K2 Filter Module. Find out more at www.youjoomla.com -->
 <div class="yjk2filter_holder">
+<h2>Фильтр</h2>
     <div id="yjk2filter_extraFieldsContainer">
     	<form action="<?php echo JRoute::_('index.php?option=com_k2&view=itemlist&layout=yjk2filter&task=yjk2filter&Itemid='.$yjk2filter_Itemid_action); ?>" method="post" id="yjk2filter_extrafields_form" >
 			<?php
