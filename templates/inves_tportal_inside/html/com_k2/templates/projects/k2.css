@@ -147,15 +147,31 @@ span.itemEditLink a:hover {background:#ffffcc;}
 
 div.itemHeader {}
 	div.itemHeader span.itemDateCreated {color:#999;font-size:11px;}
-	div.itemHeader h2.itemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;padding:10px 0 4px 0;margin:0;}
+	div.itemHeader h2.itemTitle {
+min-height: 48px;
+background-color: #9B3881;
+font-family: ArsenalRegular;
+color: #FFFFFF;
+text-transform: uppercase;
+font-size: 21px;
+text-align: left;
+margin-left: 2%;
+line-height: 34px;
+font-weight: 300;
+padding-top: 14px;
+padding-left: 20px;
+box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);
+width: 90%
+}
 	div.itemHeader h2.itemTitle span {}
 	div.itemHeader h2.itemTitle span sup {font-size:12px;color:#CF1919;text-decoration:none;} /* "Featured" presented in superscript */
 	div.itemHeader span.itemAuthor {display:block;padding:0;margin:0;}
 	div.itemHeader span.itemAuthor a {}
 	div.itemHeader span.itemAuthor a:hover {}
 
-div.itemToolbar {padding:2px 0;margin:16px 0 0 0;border-top:1px dotted #ccc;border-bottom:1px dotted #ccc;background:#f7fafe;}
-	div.itemToolbar ul {text-align:right;list-style:none;padding:0;margin:0;}
+div.itemToolbar {padding:2px 0;margin:16px 0 0 0}
+	div.itemToolbar ul {position: absolute; text-align:right;list-style:none;padding:0;margin:0;  top: 19px;
+  right:0}
 	div.itemToolbar ul li {display:inline;list-style:none;padding:0 4px 0 8px;margin:0;border-left:1px solid #ccc;text-align:center;background:none;font-size:12px;}
 	div.itemToolbar ul > li:first-child {border:none;} /* remove the first CSS border from the left of the toolbar */
 	div.itemToolbar ul li a {font-size:12px;font-weight:normal;}
@@ -183,7 +199,7 @@ div.itemToolbar {padding:2px 0;margin:16px 0 0 0;border-top:1px dotted #ccc;bord
 div.itemRatingBlock {padding:8px 0;}
 	div.itemRatingBlock span {display:block;float:left;font-style:normal;padding:0 4px 0 0;margin:0;color:#999;}
 
-div.itemBody {padding:8px 0;margin:0;}
+div.itemBody {padding:8px 0;margin:0 0 0 40px;width:100%;text-align:justify}
 
 div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImage {display:block;text-align:center;margin:0 0 8px 0;}
@@ -191,12 +207,12 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCaption {color:#666;float:left;display:block;font-size:11px;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
-div.itemIntroText {color:#444;font-size:18px;font-weight:bold;line-height:24px;padding:4px 0 12px 0;}
+div.itemIntroText,div.itemFullText {color:#444;font-size:18px;line-height:24px;padding:4px 0 12px 0;font-family: sans-serif;}
 	div.itemIntroText img {}
 
 div.itemFullText {}
 	div.itemFullText h3 {margin:0;padding:16px 0 4px 0;}
-	div.itemFullText p {}
+	div.itemFullText p {margin-bottom:4px}
 	div.itemFullText img {}
 
 div.itemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;display:none}
@@ -406,6 +422,7 @@ div.itemList {}
 		box-shadow: 4px 4px 18px -5px rgba(0,0,0,0.4);
 		background-color: #9A3680;
 		margin-left: 10px;
+		min-height: 260px
 		}
 		div.itemContainerLast {} /* this class is appended to the last container on each row of items (useful when you want to set 0 padding/margin to the last container) */
 
@@ -414,7 +431,7 @@ div.catItemView {} /* this is the item container for this view - we add a generi
 
 	/* Additional class appended to the element above for further styling per group item */
 	div.groupLeading {}
-	div.groupPrimary {background-color:white;padding-left:10px;padding-top:5px;border-left:10px solid #9B3881;max-height:280px;  position: relative;  height: 100%;}
+	div.groupPrimary {background-color:white;padding-left:10px;padding-top:5px;border-left:10px solid #9B3881;max-height:280px;position:relative;height:260px}
 	div.groupSecondary {}
 	div.groupLinks {padding:0;margin:0;}
 

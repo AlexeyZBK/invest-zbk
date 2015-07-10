@@ -115,7 +115,8 @@ defined('_JEXEC') or die;
 			<!-- Print Button -->
 			<li>
 				<a class="itemPrintLink" rel="nofollow" href="<?php echo $this->item->printLink; ?>" onclick="window.open(this.href,'printWindow','width=900,height=600,location=no,menubar=no,resizable=yes,scrollbars=yes'); return false;">
-					<span><?php echo JText::_('K2_PRINT'); ?></span>
+					<!--<span><?php echo JText::_('K2_PRINT'); ?></span>-->
+					<span id="printer" class="fa fa-print"></span>
 				</a>
 			</li>
 			<?php endif; ?>
@@ -124,7 +125,8 @@ defined('_JEXEC') or die;
 			<!-- Email Button -->
 			<li>
 				<a class="itemEmailLink" rel="nofollow" href="<?php echo $this->item->emailLink; ?>" onclick="window.open(this.href,'emailWindow','width=400,height=350,location=no,menubar=no,resizable=no,scrollbars=no'); return false;">
-					<span><?php echo JText::_('K2_EMAIL'); ?></span>
+					<!--<span><?php echo JText::_('K2_EMAIL'); ?></span>-->
+					<span id="sender" class="fa fa-envelope-o"></span>
 				</a>
 			</li>
 			<?php endif; ?>

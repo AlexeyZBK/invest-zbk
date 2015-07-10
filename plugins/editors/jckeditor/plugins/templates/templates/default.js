@@ -6,10 +6,10 @@ For licensing, see LICENSE.html or http://ckeditor.com/license
 CKEDITOR.addTemplates('default', {
     imagesPath: CKEDITOR.getUrl(CKEDITOR.plugins.getPath('templates') + 'templates/images/'),
     templates: [{
-        title: 'Проектоы, площадки, организации',
+        title: 'Проекты, площадки, организации',
         image: 'template1.gif',
         description: 'Шаблон для заполнения карточек проектов, площадок и организаций.',
-        html: ''
+        html: '<table><tr><td>Тип: </td><td> Бизнес идея | Инсвестиционный проект</td></tr><tr><td>Категория проекта: </td><td> Поиск инвестора | Поиск партнера | Успешный пример</td></tr><tr><td>Статус: </td><td> Реализован | Реализуется</td></tr></table>'
     }/*, {
         title: '2 big buttons with descriptions',
         image: 'template2.gif',
