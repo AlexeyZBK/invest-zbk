@@ -16,8 +16,12 @@ var urlDoc = window.location.pathname;
 var proekty = new RegExp("/index.php/proekty");
 var ploshchadki = new RegExp("/index.php/ploshchadki");
 var proektySerch = new RegExp("/index.php/component/jak2filter/");
+var singl_stats = new RegExp("/index.php/kategoriya-otsutstvuet/");
 if (urlDoc.search(proekty) != -1 || urlDoc.search(ploshchadki)  != -1 || urlDoc.search(proektySerch)  != -1) {
 document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">';
+}
+if (urlDoc.search(singl_stats) != -1) {
+document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/singl-stats/k2.css"  rel="stylesheet">';
 }
 </script>
 <!----Обёртка--><section id="wrapper"><!--Обёртка---->
@@ -40,7 +44,9 @@ document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/
 <aside id="modulesposition2" style=""><jdoc:include type="modules" name="mod2" /></aside>
 </main> 
 
+<!------ РАЗДЕЛИТЕЛЬ ------><div class="clearBoth"></div><!------ РАЗДЕЛИТЕЛЬ ------>
 <!-------------------------------------- ФУТЕР ТУТ ВСЕ ПОНЯТНО -------------------------------------->
+
   <footer id="futer" class="">
   <!----<span id="pater"></span>---->
   <div class="ppppp"><h1 class="h1_cept" style="width:100%;margin-left:0;min-height: 48px;background-color: #9A3680;font-family: ArsenalRegular;color: #FFFFFF;text-transform: uppercase;

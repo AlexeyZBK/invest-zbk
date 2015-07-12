@@ -1091,11 +1091,10 @@ div.k2UsersBlock ul li ul.ubUserItems li {}
   box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);}
 
 
-  
-
 #contentCom{min-height:1000px;}
-#maincontent{position:relative;width:60%;margin-bottom:10%;top:30px}
+#maincontent{width:60%;margin-top:20px;float:left;margin-bottom:100px}
 #modulesposition1{position:fixed;top:220px;right:36px;width:30%}
+#modulesposition2{float:right;width:30%;margin:20px 20px 20px 0}
 dl#system-message{background-color:#CE3B3B;width:83%;position:absolute;left:6%;padding:60px;font-size:38px;top:96px;  box-shadow:-4px 4px 18px -5px rgba(0,0,0,0.4);color:#FaFaFa;line-height:88px}
 #system-message dt{}
 .fuck ul li{}
