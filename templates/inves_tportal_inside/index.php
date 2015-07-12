@@ -9,7 +9,6 @@ defined('_JEXEC') or die;
 <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/template.css"  rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Cuprum&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">
 </head>
 <body>
 <!----Обёртка--><section id="wrapper"><!--Обёртка---->
@@ -83,6 +82,15 @@ defined('_JEXEC') or die;
 
 <!-------------------------------------- Обёртка--></section><!--Обёртка-->
 <div id="scroller"></div>
+<script>
+var urlDoc = window.location.pathname;
+var proekty = new RegExp("/index.php/proekty");
+var ploshchadki = new RegExp("/index.php/ploshchadki");
+if (urlDoc.search(proekty) != -1 || urlDoc.search(ploshchadki)  != -1) {
+document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">';
+}
+
+</script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scroll_menu.js"></script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.scrollspeed.js"></script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scripts.js"></script>

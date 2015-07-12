@@ -35,6 +35,77 @@ $document->addScriptDeclaration("
 ");
 
 ?>
+<style>
+.button{border:1px solid #E0E0E0;padding:3px 6px;margin:0;background-color:#F0F0F0;font-size:14px;text-decoration:none;font-family:Georgia, "Times New Roman",Times,serif;color:#666;font-weight:normal;outline:0}#modalka,#modalkaZ{display:block;position: fixed;top:30px;left:-240%;height:100%;width:100%;background-color:rgba(0,0,0,0.8);z-index:20;-ms-transition:left 1.3s;-webkit-transition:left 1.3s;transition:left 1.3s;overflow:scroll}#closer,#closerZ{position:absolute;top:100px;left:90%;padding:50px;color:#F9F9F9;font-size:400%;-ms-transition:transform .5s;-webkit-transition:transform .5s;transition:transform .5s;}#closer:hover,#closerZ:hover{-ms-transform:rotate(30deg);-webkit-transform:rotate(30deg);transform:rotate(30deg);}input.inputtxt{display:block;height:26px !important;width:600px !important;font-size:20px !important;margin:10px auto !important;padding:0!important}.areatxt{display:block;width:600px;font-size:20px;margin:10px auto;height:460px}input.inputDate{display:block !important;margin:10px auto !important;height:38px !important;width:320px !important;font-size:26px !important;}.cornfieldH{font-size:24px;font-weight:700;border-bottom:1px solid #444444;padding-bottom:8px}.sense,.cornfield{font-size:18px;line-height:24px;font-family:sans-serif}.cornfield{font-weight:700;color:#333333}.sense{color:#222222}#buttonSender,#buttonSenderZ{display:block;background-color:transparent;color:#FFFFFF;font-family:monospace;font-size:20px;border-left:none;  border-right: none;border-top:1px solid rgba(255,255,255,1);border-bottom:1px solid rgba(255,255,255,1);padding:8px 12px;margin:10px auto;-ms-transition:all .5s;-webkit-transition:all .5s;transition:all .5s;}#buttonSender:hover,#buttonSenderZ:hover{padding:14px 16px;border-bottom-color:rgba(255,255,255,0);border-top-color:rgba(255,255,255,0);margin-top:4px}.wrappp{position:relative;top:70px;width:70%;margin-left:auto;margin-right:auto;margin-bottom:200px}
+</style>
+<script>
+function closer () {var modalka=document.getElementById('modalka');modalka.style.left="-240%";}
+function openForm (){var modalka = document.getElementById('modalka');modalka.style.left = "0%";}
+function closerZ () {var modalkaZ=document.getElementById('modalkaZ');modalkaZ.style.left="-240%";}
+function openFormZ (){var modalkaZ = document.getElementById('modalkaZ');modalkaZ.style.left = "0%";}
+</script>
+<script>
+function copy (){
+var inputType = document.getElementById('type').value;
+var inputOtrasle = document.getElementById('otrasle').value;
+var inputCategory = document.getElementById('category').value;
+var inputStatus = document.getElementById('status8').value;
+var inputLocation = document.getElementById('location').value;
+var inputAnnotation = document.getElementById('annotation').value;
+var inputPrice = document.getElementById('price').value;
+var inputNeedprice = document.getElementById('needprice').value;
+var inputDeadline = document.getElementById('deadline').value;
+var inputRealization = document.getElementById('realization').value;
+var inputDiagrammFrom = document.getElementById('diagrammFrom').value;
+var inputDiagrammTo = document.getElementById('diagrammTo').value;
+var inputNpv = document.getElementById('npv').value;
+var inputIrr = document.getElementById('irr').value;
+var inputPp = document.getElementById('pp').value;
+var inputRinok = document.getElementById('rinok').value;
+var inputSite = document.getElementById('site').value;
+var inputOkved = document.getElementById('okved').value;
+var inputFormatF = document.getElementById('formatF').value;
+var inputDocs = document.getElementById('docs').value;
+var inputGosprogs = document.getElementById('gosprogs').value;
+var inputIniciator = document.getElementById('iniciator').value;
+var inputOgrn = document.getElementById('ogrn').value;
+var inputInn = document.getElementById('inn').value;
+var inputTelephon = document.getElementById('telephon').value;
+var inputMail = document.getElementById('mail').value;
+var inputSite2 = document.getElementById('site2').value;
+var inputAddr = document.getElementById('addr').value;
+var inputLicocontact = document.getElementById('licocontact').value;
+var inputCurator = document.getElementById('curator').value;
+var inputCuratororgan = document.getElementById('curatororgan').value;
+var inputFiocuratororgan = document.getElementById('fiocuratororgan').value;
+var inputDolzhncuratororgan = document.getElementById('dolzhncuratororgan').value;
+var inputTelephoncuratora = document.getElementById('telephoncuratora').value;
+var inputMailcuratora = document.getElementById('mailcuratora').value;
+var frameEditor = document.getElementById('frameEditor');
+frameEditor.contentWindow.document.body.innerHTML = '<p><strong>Тип: </strong><span class="sense">'+inputType+'</span></p><p><strong>Отрасль: </strong><span class="sense">'+inputOtrasle+'</span></p><p><strong>Категория: </strong><span class="sense">'+inputCategory+'</span></p><p><strong>Статус: </strong><span class="sense">'+inputStatus+'</span></p><p><strong>Место реализации: </strong><span class="sense">'+inputLocation+'</span></p><p><strong>Полная стоимость проекта: </strong><span class="sense">'+inputPrice+'</span></p><p><strong>Потребность в инвестициях: </strong><span class="sense">'+inputNeedprice+'</span></p><hr id="system-readmore" /><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Аннотация: </strong><span class="sense">'+inputAnnotation+'</span></p><p><strong>Срок реализации: </strong><span class="sense">'+inputDeadline+'</span></p><p><strong>Этапы реализации проекта: </strong><span class="sense">'+inputRealization+'</span></p><p><strong>Диаграмма реализации этапов: </strong><span class="sense">с '+inputDiagrammFrom+' по '+inputDiagrammTo+'</span></p><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Показатели эффективности проекта</strong></p><p><strong>Чистый дисконтированный доход (NPV): </strong><span class="sense">'+inputNpv+' рублей</span></p><p><strong>Внутренняя норма доходности (IRR): </strong><span class="sense">'+inputIrr+' %</span></p><p><strong>Срок окупаемости инвестиций (PP): </strong><span class="sense">'+inputPp+' лет</span></p><p><strong>Рынок: </strong><br><span class="sense"></span>'+inputRinok+'</p><p><strong>Промо сайт: </strong><span class="sense"></span>'+inputSite+'</p><p><strong>ОКВЭД: </strong><span class="sense"></span>'+inputOkved+'</p><p><strong>Формат финансирования: </strong><span class="sense"></span>'+inputFormatF+'</p><p><strong>Наличие документации: </strong><span class="sense"></span>'+inputDocs+'</p><p><strong>Участие в государственных программах: </strong><span class="sense"></span>'+inputGosprogs+'</p><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Инициатор проекта</strong></p><p><strong>Наименование (ФИО): </strong><span class="sense"></span>'+inputIniciator+'</p><p><strong>ОГРН / ИНН: </strong><span class="sense"></span>'+inputOgrn+' / '+inputInn+'</p><p><strong>Телефон/факс: </strong><span class="sense"></span>'+inputTelephon+'</p><p><strong>Email: </strong><span class="sense"></span>'+inputMail+'</p><p><strong>Сайт: </strong><span class="sense"></span>'+inputSite2+'</p><p><strong>Адрес: </strong><span class="sense"></span>'+inputAddr+'</p><p><strong>Контактное лицо: </strong><span class="sense"></span>'+inputLicocontact+'</p><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Куратор проекта</strong></p><p><strong>Наличие: </strong><span class="sense"></span>'+inputCurator+'</p><p><strong>Курирующий орган государственной исполнительной власти: </strong><span class="sense"></span>'+inputCuratororgan+'</p><p><strong>ФИО куратора: </strong><span class="sense"></span>'+inputFiocuratororgan+'</p><p><strong>Должность куратора: </strong><span class="sense"></span>'+inputDolzhncuratororgan+'</p><p><strong>Телефон: </strong><span class="sense"></span>'+inputTelephoncuratora+'</p><p class="cornfield"><span>Email: </strong><span class="sense"></span>'+inputMailcuratora+'</p>';}
+</script>
+<script>
+function copyZ () {
+var inputTypeZ = document.getElementById('typeZ').value;
+var inputCategoryZ = document.getElementById('categoryZ').value;
+var inputPloshadZ = document.getElementById('ploshadZ').value;
+var inputPlaceZ = document.getElementById('placeZ').value;
+var inputInjZ = document.getElementById('injZ').value;
+var inputUsloviyaZ = document.getElementById('usloviyaZ').value;
+var inputPriceZ = document.getElementById('priceZ').value;
+var inputAnnotationZ = document.getElementById('annotationZ').value;
+var inputUdalennostZ = document.getElementById('udalennostZ').value;
+var inputKilom = document.getElementById('kilom').value;
+var inputPutiZ = document.getElementById('putiZ').value;
+var inputInjenerZ = document.getElementById('injenerZ').value;
+var inputOwnerZ = document.getElementById('ownerZ').value;
+var inputOwnerZZ = document.getElementById('ownerZz').value;
+var inputFioZ = document.getElementById('fioZ').value;
+var inputPhonZ = document.getElementById('phonZ').value;
+var inputEmailZ = document.getElementById('emailZ').value;
+var frameEditorZ = document.getElementById('frameEditor');
+frameEditorZ.contentWindow.document.body.innerHTML = '<p><strong>Тип: </strong><span class="sense">'+inputTypeZ+'</span></p><p><strong>Категория земельного участка: </strong><span class="sense">'+inputCategoryZ+'</span></p><p><strong>Площадь земельного участка: </strong><span class="sense">'+inputPloshadZ+' м²</span></p><p><strong>Место расположения: </strong><span class="sense">'+inputPlaceZ+'</span></p><p><strong>Наличие инженерных сетей: </strong><span class="sense">'+inputInjZ+'</span></p><p><strong>Условия использования площадки: </strong><span class="sense">'+inputUsloviyaZ+'</span></p><p><strong>Стоимость: </strong><span class="sense">'+inputPriceZ+' руб./м2</span></p><hr id="system-readmore" /><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Описание площадки</strong><span class="sense">'+inputAnnotationZ+'</span></p><p><strong>Удаленность площадки</strong><br><span class="sense">'+inputUdalennostZ+' '+inputKilom+'</span></p><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Подъездные пути: </strong><span class="sense">'+inputPutiZ+'</span></p><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Описание инженерных путей: </strong><span class="sense">'+inputInjenerZ+'</span></p><p><strong>Информация о владельце: </strong><span class="sense">'+inputOwnerZ+'</span></p><p><strong>Информация о собственнике: </strong><span class="sense">'+inputOwnerZZ+'</span></p><p style="margin-bottom:12px;"><strong style="display:block;font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0;color:#000000;">Контактное лицо</strong><span class="sense">ФИО: '+inputFioZ +'<br>Телефон: '+inputPhonZ+'<br>Email: '+inputEmailZ+'</span></p>';}
+</script>
 
 <form action="index.php" enctype="multipart/form-data" method="post" name="adminForm" id="adminForm">
 	<?php if($this->mainframe->isSite()): ?>
@@ -193,6 +264,257 @@ $document->addScriptDeclaration("
 									<?php if ($this->params->get('showAttachmentsTab')): ?>
 									<li id="tabAttachments"><a href="#k2Tab6"><?php echo JText::_('K2_ATTACHMENTS'); ?></a></li>
 									<?php endif; ?>
+
+<div id="modalka">
+<a id="closer" onclick="closer()" href="#"><i class="fa fa-times"></i></a>
+<div class="wrappp">
+<input class="inputtxt" id="type" list="textType" placeholder="Выберите тип проекта">
+<datalist id="textType">
+<option value="Бизнес - идея">1</option>
+<option value="Инвестиционный проект">2</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="otrasle" list="textOtrasle" placeholder="Выберите отрасль к которой он относится">
+<datalist id="textOtrasle">
+<option value="Сельское хозяйство, охота и лесное хозяйство">A</option>
+<option value="Рыболовство, рыбоводство">B</option>
+<option value="Добыча полезных ископаемых">C</option>
+<option value="Добыча топливно-энергетических полезных ископаемых">CA</option>
+<option value="Добыча полезных ископаемых, кроме топливно-энергетических">CB</option>
+<option value="Обрабатывающие производства">D</option>
+<option value="Производство пищевых продуктов, включая напитки, и табака">DA</option>
+<option value="Текстильное и швейное производство">DB</option>
+<option value="Производство кожи, изделий из кожи и производство обуви">DC</option>
+<option value="Обработка древисины и производство изделий из дерева">DD</option>
+<option value="Целлюлозно - бумажное производство; издательская и полиграфическая деятельность">DE</option>
+<option value="Производство кокса, нефтепродуктов и ядерных материалов">DF</option>
+<option value="Химическое производство">DG</option>
+<option value="Производство резиновых и пластмассовых изделий">DH</option>
+<option value="Производство прочих неметаллических минеральных продуктов">DI</option>
+<option value="Металлургическое производство и производство готовых металлических изделий">DJ</option>
+<option value="Производство машин и оборудования">DK</option>
+<option value="Производство электрооборудования, электронного и оптического оборудования">DL</option>
+<option value="Производство транспортных средств и оборудования">DM</option>
+<option value="Прочие производства">DN</option>
+<option value="Производство и распределение электроэнергии, газа и воды">E</option>
+<option value="Строительство">F</option>
+<option value="Оптовая и розничная торговля; ремонт автотранспортных средств, мотоциклов, бытовых изделий и предметов личного пользования">G</option>
+<option value="Гостиницы и рестораны">H</option>
+<option value="Транспорт и связь">I</option>
+<option value="Финансовая деятельность">J</option>
+<option value="Операции с недвижимым имуществом, аренда и предоставление услуг">K</option>
+<option value="Государственное управление и обеспечение военной безопасности; обязательное социальное обеспечение">L</option>
+<option value="Образование">M</option>
+<option value="Здравоохранение и предоставление социальных услуг">N</option>
+<option value="Предоставление прочих коммунальных, социальных и персональных услуг">O</option>
+<option value="Предоставление услуг по ведению домашнего хозяйства">P</option>
+<option value="Деятельность экстерриториальных организаций">Q</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="category" list="textCategory" placeholder="Выберите категорию из списка">
+<datalist id="textCategory">
+<option value="Поиск инвестора">1</option>
+<option value="Поиск партнера">2</option>
+<option value="Успешный пример">3</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="status8" list="textStatus" placeholder="Выберите статус реализации">
+<datalist id="textStatus">
+<option value="Реализуется">1</option>
+<option value="Реализован">2</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="location" list="textLocation" placeholder="Выберите местоположение">
+<datalist id="textLocation">
+<option value="Агинский район">1</option>
+<option value="Акшинский район">2</option>
+<option value="Александрово-Заводский район">3</option>
+<option value="Балейский район">4</option>
+<option value="Борзинский район">5</option>
+<option value="Газимуро-Заводский район">6</option>
+<option value="Забайкальский район">7</option>
+<option value="Каларский район">8</option>
+<option value="Калганский район">9</option>
+<option value="Карымский район">10</option>
+<option value="Краснокаменский район">11</option>
+<option value="Красночикойский район">12</option>
+<option value="Кыринский район">13</option>
+<option value="Могойтуйский район">14</option>
+<option value="Могочинский район">15</option>
+<option value="Нерчинский район">16</option>
+<option value="Нерчинско-Заводский район">17</option>
+<option value="Оловяннинский район">18</option>
+<option value="Ононский район">19</option>
+<option value="Петровск-Забайкальский район">20</option>
+<option value="Приаргунский район">21</option>
+<option value="Сретенский район">22</option>
+<option value="Тунгиро-Олекминский район">23</option>
+<option value="Тунгокоченский район">24</option>
+<option value="Улетовский район">25</option>
+<option value="Хилокский район">26</option>
+<option value="Чернышевский район">27</option>
+<option value="Читинский район">28</option>
+<option value="Шелопугинский район">29</option>
+<option value="Шилкинский район">30</option>
+</datalist>
+<br><br>
+<input type="number" min="0" class="inputtxt" id="price" placeholder="Полная стоимость проекта">
+<br><br>
+<input type="number" min="0" class="inputtxt" id="needprice" placeholder="Потребность в инвестициях">
+<br><br>
+<textarea class="areatxt" id="annotation" placeholder="Резюме проекта (краткое текстовое описание сущности и основных преимуществ)"></textarea>
+<br><br>
+<input type="number" min="0" class="inputtxt" id="deadline" placeholder="Срок реализации">
+<br><br>
+<textarea class="areatxt" id="realization" placeholder="Этапы реализации проекта (аннотация этапов, даты их реализации )"></textarea>
+<br><br>
+<input type="date" class="inputDate" id="diagrammFrom" placeholder="Сроки реализации  с">
+<input type="date" class="inputDate" id="diagrammTo" placeholder="по">
+<br><br>
+<input type="number" min="0" class="inputtxt" id="npv" placeholder="Чистый дисконтированный доход (NPV)">
+<br><br>
+<input type="number" min="0" class="inputtxt" id="irr" placeholder="Внутренняя норма доходности (IRR)">
+<br><br>
+<input type="number" min="0" class="inputtxt" id="pp" placeholder="Срок окупаемости инвестиций (PP)">
+<br><br>
+<textarea class="areatxt" id="rinok" placeholder="Рынок (виды продукции,планируемые объемы и т.д.)"></textarea>
+<br><br>
+<input type="url" class="inputtxt" id="site" placeholder="Адрес сайта">
+<br><br>
+<input  class="inputtxt" id="okved" placeholder="Код по ОКВЭД">
+<br><br>
+<input class="inputtxt" id="formatF" list="textFormatF" placeholder="Формат финансирования">
+<datalist id="textFormatF">
+<option value="Участие в уставном капитале">1</option>
+<option value="Реализация опционов">2</option>
+<option value="Продажа акций">3</option>
+<option value="Займы">4</option>
+<option value="Кредиты">5</option>
+<option value="Другое">6</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="docs" list="textDocs" placeholder="Наличие документации">
+<datalist id="textDocks">
+<option value="Бизнес - план">1</option>
+<option value="ТЭО">2</option>
+<option value="Научное обоснование">3</option>
+<option value="Лицензия">4</option>
+<option value="Иное">5</option>
+<option value="Нет">6</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="gosprogs" list="textGosprogs" placeholder="Участие в государственных программах">
+<datalist id="textGosprogs">
+<option value="Российской Федерации или Забайкальского края">1</option>
+<option value="Федеральной адресной инвестиционной программе (ФАИП)">2</option>
+<option value="Краевой адресной инвестиционной программе (КАИП)">3</option>
+</datalist>
+<br><br>
+<input type="text" class="inputtxt" id="iniciator" placeholder="Инициатор проекта (ФИО)">
+<br><br>
+<input type="number" min="0" pattern="[0-9]{13}" class="inputtxt" id="ogrn" size="13" placeholder="ОГРН">
+<br><br>
+<input type="number" min="0" pattern="[0-9]{10}" class="inputtxt" id="inn" size="10" placeholder="ИНН">
+<br><br>
+<input type="number" min="0" pattern="[0-9]{11}" class="inputtxt" id="telephon" size="11" placeholder="Телефон / факс">
+<br><br>
+<input type="email" class="inputtxt" id="mail" placeholder="Введите email">
+<br><br>
+<input  class="inputtxt" id="site2" placeholder="Наличие сайта (адрес при наличии)">
+<br><br>
+<input  class="inputtxt" id="addr" placeholder="Адрес">
+<br><br>
+<input  class="inputtxt" id="licocontact" placeholder="Контактное лицо">
+<br><br>
+<input class="inputtxt" id="curator" list="textCurator" placeholder="Наличие куратора проекта">
+<datalist id="textCurator">
+<option value="Да">1</option>
+<option value="Нет">2</option>
+</datalist>
+<br><br>
+<input  class="inputtxt" id="curatororgan" placeholder="Курирующий орган государственной исполнительной власти">
+<br><br>
+<input  class="inputtxt" id="fiocuratororgan" placeholder="ФИО куратолра">
+<br><br>
+<input  class="inputtxt" id="dolzhncuratororgan" placeholder="Должность куратолра">
+<br><br>
+<input type="number" min="0" pattern="[0-9]{11}" class="inputtxt" id="telephoncuratora" size="11" placeholder="Телефон куратора">
+<br><br>
+<input type="email" class="inputtxt" id="mailcuratora" placeholder="Email куратора">
+<br><br>
+<button id="buttonSender" type="button" onclick="copy();">Заполнить поля</button>
+</div>
+</div>
+
+<div id="modalkaZ">
+<a id="closerZ" onclick="closerZ()" href="#"><i class="fa fa-times"></i></a>
+<div class="wrappp">
+<input class="inputtxt" id="typeZ" list="TypeZz" placeholder="Выберите тип площадки">
+<datalist id="TypeZz">
+<option value="Промышленно-производственные">1</option>
+<option value="Агропромышленные">2</option>
+<option value="Туристическо-рекреационные">2</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="categoryZ" list="CategoryZz" placeholder="Категория земельного участка">
+<datalist id="CategoryZz">
+<option value="Земли промышленности">1</option>
+<option value="Земли населенных пунктов">2</option>
+<option value="земли сельскохозяйственного назначения">3</option>
+<option value="Земли запаса">4</option>
+</datalist>
+<br><br>
+<input type="number" class="inputtxt" id="ploshadZ" placeholder="Площадь земельного участка м²">
+<br><br>
+<input class="inputtxt" id="placeZ" placeholder="Район, населенный пункт">
+<br><br>
+<input class="inputtxt" id="injZ" list="injZz" placeholder="Наличие инженерных сетей">
+<datalist id="injZz">
+<option value="Есть в наличие">1</option>
+<option value="Отсутствуют">2</option>
+</datalist>
+<br><br>
+<input class="inputtxt" id="usloviyaZ" list="usloviyaZz" placeholder="Условия использования площадки">
+<datalist id="usloviyaZz">
+<option value="Аренда">1</option>
+<option value="Продажа">2</option>
+</datalist>
+<br><br>
+<input type="number" class="inputtxt" id="priceZ" placeholder="Стоимость">
+<br><br>
+<textarea class="areatxt" id="annotationZ" placeholder="Описание площадки"></textarea>
+<br><br>
+<input class="inputtxt" id="udalennostZ" list="udalennostZz" placeholder="Удаленность площадки, отсчет от">
+<datalist id="udalennostZz">
+<option value="От центра населенного пункта">1</option>
+<option value="От автомагистрали">2</option>
+<option value="От железнодорожной станци">3</option>
+<option value="От речного порта">4</option>
+<option value="От аэропорта">5</option>
+<option value="От г. Читы ">6</option>
+</datalist>
+<input type="number" class="inputtxt" id="kilom" placeholder="километров">
+<br><br>
+<textarea class="areatxt" id="putiZ" placeholder="Описание подъездных путей"></textarea>
+<br><br>
+<textarea class="areatxt" id="injenerZ" placeholder="Описание инженерных сетей"></textarea>
+<br><br>
+<input class="inputtxt" id="ownerZ" placeholder="Информация о владельце">
+<br><br>
+<input class="inputtxt" id="ownerZz" placeholder="Информация о собственнике">
+<br><br>
+<input class="inputtxt" id="fioZ" placeholder="Контактное лицо - ФИО">
+<br><br>
+<input class="inputtxt" id="phonZ" placeholder="Контактное лицо - телефон">
+<br><br>
+<input class="inputtxt" id="emailZ" placeholder="Еmail контактного лица">
+<br><br>
+<button id="buttonSenderZ" type="button" onclick="copyZ();">Заполнить поля</button>
+</div>
+</div>
+<button type="button" onclick="openForm()" class="button">Форму для проектов</button>
+<button type="button" onclick="openFormZ()" class="button">Форму для площадок и объектов</button>
+
 									<?php if(count(array_filter($this->K2PluginsItemOther)) && $this->params->get('showK2Plugins')): ?>
 									<li id="tabPlugins"><a href="#k2Tab7"><?php echo JText::_('K2_PLUGINS'); ?></a></li>
 									<?php endif; ?>

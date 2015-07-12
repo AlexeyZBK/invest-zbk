@@ -8,3 +8,7 @@ dl#system-message{background-color:#CE3B3B;width:83%;position:absolute;left:6%;p
 .fuck ul li{}
 #printer,#sender{color:#444444;font-size:25px;text-decoration:none;-ms-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s}
 #printer:hover,#sender:hover{color:#9B3881}
+.cornfieldH{font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0}
+/*.sense,.cornfield{font-size:18px;line-height:24px;font-family:sans-serif}*/
+.cornfield{font-weight:700;color:#333333;width:50%}
+.sense{color:#222222;font-size:17px}
