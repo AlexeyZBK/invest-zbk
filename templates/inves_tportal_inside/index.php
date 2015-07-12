@@ -13,10 +13,10 @@ defined('_JEXEC') or die;
 <body>
 <script>
 var urlDoc = window.location.pathname;
-var proekty = new RegExp("/index.php/proekty");
-var ploshchadki = new RegExp("/index.php/ploshchadki");
-var proektySerch = new RegExp("/index.php/component/jak2filter/");
-var singl_stats = new RegExp("/index.php/kategoriya-otsutstvuet/");
+var proekty = new RegExp("/index.php/ru/proekty");
+var ploshchadki = new RegExp("/index.php/ru/ploshchadki");
+var proektySerch = new RegExp("/index.php/ru/component/jak2filter");
+var singl_stats = new RegExp("/index.php/ru/kategoriya-otsutstvuet");
 if (urlDoc.search(proekty) != -1 || urlDoc.search(ploshchadki)  != -1 || urlDoc.search(proektySerch)  != -1) {
 document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">';
 }
@@ -28,6 +28,7 @@ document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/
 <!--Шапка из логотипа и меню-->
 <header>
 <section id="fixed_header" class="">
+<jdoc:include type="modules" name="lang" />
 <!--Логотип-->
 <jdoc:include type="modules" name="logo" />
 <!--Логотип-->

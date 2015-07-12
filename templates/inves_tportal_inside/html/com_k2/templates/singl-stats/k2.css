@@ -146,23 +146,8 @@ span.itemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text
 span.itemEditLink a:hover {background:#ffffcc;}
 
 div.itemHeader {}
-	div.itemHeader span.itemDateCreated {position:relative;left:80%;top:36px;color:#FDFDFD;font-size:12px}
-	div.itemHeader h2.itemTitle {
-min-height: 48px;
-background-color: #777777;
-font-family: ArsenalRegular;
-color: #FFFFFF;
-text-transform: uppercase;
-font-size: 26px;
-text-align: left;
-margin-left: 2%;
-line-height: 34px;
-font-weight: 300;
-padding-top: 14px;
-padding-left: 20px;
-box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);
-width: 90%
-}
+	div.itemHeader span.itemDateCreated {position:relative;right:-84%;top:38px;color:#FDFDFD;font-size:12px}
+	div.itemHeader h2.itemTitle{min-height:48px;background-color:#777777;font-family:ArsenalRegular;color:#FFFFFF;text-transform:uppercase;font-size:26px;text-align:left;line-height:34px;font-weight:300;padding-top:14px;padding-left:40px;box-shadow:0 4px 5px -2px rgba(153,153,153,0.8);margin:0 -15px}
 	div.itemHeader h2.itemTitle span {}
 	div.itemHeader h2.itemTitle span sup {font-size:12px;color:#CF1919;text-decoration:none;} /* "Featured" presented in superscript */
 	div.itemHeader span.itemAuthor {display:block;padding:0;margin:0;}
@@ -199,7 +184,7 @@ div.itemToolbar {padding:2px 0;margin:16px 0 0 0}
 div.itemRatingBlock {padding:8px 0;}
 	div.itemRatingBlock span {display:block;float:left;font-style:normal;padding:0 4px 0 0;margin:0;color:#999;}
 
-div.itemBody {padding:8px 0;margin:0 0 0 40px;width:100%;text-align:justify}
+div.itemBody {padding:8px 0;margin:0;width:100%;text-align:justify}
 
 div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImage {display:block;text-align:center;margin:0 0 8px 0;}
@@ -207,7 +192,7 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCaption {color:#666;float:left;display:block;font-size:11px;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
-div.itemIntroText,div.itemFullText {color:#444;font-size:15px;line-height:24px;padding:4px 0 12px 0;font-family: sans-serif;}
+div.itemIntroText,div.itemFullText {color:#444;font-size:15px;line-height:24px;padding:0 5%;font-family: sans-serif;}
 	div.itemIntroText p strong,div.itemFullText p strong{font-size:17.4px;color:#767676}
 	div.itemIntroText img {}
 
@@ -299,7 +284,7 @@ div.itemVideoBlock {margin:0 0 16px 0;padding:16px;background:#010101 url(../ima
 	div.itemVideoBlock span.itemVideoCredits {color:#eee;float:right;display:block;font-style:italic;font-size:11px;width:35%;text-align:right;}
 
 /* Image Gallery */
-div.itemImageGallery {margin:0 0 16px 0;padding:0;}
+div.itemImageGallery {margin:0 0 16px 2%;padding:0;}
 
 /* Article navigation */
 div.itemNavigation {padding:4px 8px;margin:0 0 24px 0;border-top:1px dotted #ccc;border-bottom:1px dotted #ccc;background:#fffff0;}
@@ -1092,7 +1077,7 @@ div.k2UsersBlock ul li ul.ubUserItems li {}
 
 
 #contentCom{min-height:1000px;}
-#maincontent{width:60%;margin-top:20px;float:left;margin-bottom:100px}
+#maincontent{width:60%;margin-top:20px;float:left;margin-bottom:100px;margin-left:3%;box-shadow:1px 12px 18px -5px rgba(0,0,0,0.4)}
 #modulesposition1{position:fixed;top:220px;right:36px;width:30%}
 #modulesposition2{float:right;width:30%;margin:20px 20px 20px 0}
 dl#system-message{background-color:#CE3B3B;width:83%;position:absolute;left:6%;padding:60px;font-size:38px;top:96px;  box-shadow:-4px 4px 18px -5px rgba(0,0,0,0.4);color:#FaFaFa;line-height:88px}

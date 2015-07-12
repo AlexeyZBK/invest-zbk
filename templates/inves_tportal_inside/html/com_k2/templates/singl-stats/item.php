@@ -542,7 +542,7 @@ defined('_JEXEC') or die;
   <!-- Item image gallery -->
   <a name="itemImageGalleryAnchor" id="itemImageGalleryAnchor"></a>
   <div class="itemImageGallery">
-	  <h3><?php echo JText::_('K2_IMAGE_GALLERY'); ?></h3>
+	  <!--<h3><?php /*echo JText::_('K2_IMAGE_GALLERY'); */?></h3>-->
 	  <?php echo $this->item->gallery; ?>
   </div>
   <?php endif; ?>
