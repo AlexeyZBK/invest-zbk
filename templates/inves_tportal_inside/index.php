@@ -11,6 +11,15 @@ defined('_JEXEC') or die;
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body>
+<script>
+var urlDoc = window.location.pathname;
+var proekty = new RegExp("/index.php/proekty");
+var ploshchadki = new RegExp("/index.php/ploshchadki");
+var proektySerch = new RegExp("/index.php/component/jak2filter/");
+if (urlDoc.search(proekty) != -1 || urlDoc.search(ploshchadki)  != -1 || urlDoc.search(proektySerch)  != -1) {
+document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">';
+}
+</script>
 <!----Обёртка--><section id="wrapper"><!--Обёртка---->
 <!--Шапка из логотипа и меню-->
 <header>
@@ -82,15 +91,6 @@ defined('_JEXEC') or die;
 
 <!-------------------------------------- Обёртка--></section><!--Обёртка-->
 <div id="scroller"></div>
-<script>
-var urlDoc = window.location.pathname;
-var proekty = new RegExp("/index.php/proekty");
-var ploshchadki = new RegExp("/index.php/ploshchadki");
-if (urlDoc.search(proekty) != -1 || urlDoc.search(ploshchadki)  != -1) {
-document.body.innerHTML += '<link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/html/com_k2/templates/projects/k2.css"  rel="stylesheet">';
-}
-
-</script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scroll_menu.js"></script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.scrollspeed.js"></script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scripts.js"></script>
