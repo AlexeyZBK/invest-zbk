@@ -138,7 +138,7 @@ div.userItemIsFeatured {background:url(../images/system/featuredItem.png) no-rep
 a.itemPrintThisPage {display:block;width:160px;margin:4px auto 16px;padding:4px;background:#F7FAFE;border:1px solid #ccc;text-align:center;color:#555;font-size:13px;}
 a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
 
-div.itemView {padding:8px 0 24px 0;margin:0 0 24px 0;border-bottom:1px dotted #ccc;} /* this is the item container for this view */
+div.itemView {padding:8px 0 24px 0;margin:0 0 24px 0} /* this is the item container for this view */
 div.itemIsFeatured {} /* Attach a class for each featured item */
 
 span.itemEditLink {float:right;display:block;padding:4px 0;margin:0;width:120px;text-align:right;}
@@ -146,14 +146,14 @@ span.itemEditLink a {padding:2px 12px;border:1px solid #ccc;background:#eee;text
 span.itemEditLink a:hover {background:#ffffcc;}
 
 div.itemHeader {}
-	div.itemHeader span.itemDateCreated {color:#999;font-size:11px;}
+	div.itemHeader span.itemDateCreated {position:relative;left:80%;top:36px;color:#FDFDFD;font-size:12px}
 	div.itemHeader h2.itemTitle {
 min-height: 48px;
-background-color: #9B3881;
+background-color: #777777;
 font-family: ArsenalRegular;
 color: #FFFFFF;
 text-transform: uppercase;
-font-size: 21px;
+font-size: 26px;
 text-align: left;
 margin-left: 2%;
 line-height: 34px;
@@ -207,7 +207,7 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCaption {color:#666;float:left;display:block;font-size:11px;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
-div.itemIntroText,div.itemFullText {color:#444;font-size:17px;line-height:24px;padding:4px 0 12px 0;font-family: sans-serif;}
+div.itemIntroText,div.itemFullText {color:#444;font-size:15px;line-height:24px;padding:4px 0 12px 0;font-family: sans-serif;}
 	div.itemIntroText p strong,div.itemFullText p strong{font-size:17.4px;color:#767676}
 	div.itemIntroText img {}
 
