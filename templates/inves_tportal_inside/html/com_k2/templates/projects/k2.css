@@ -207,8 +207,8 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCaption {color:#666;float:left;display:block;font-size:11px;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
-div.itemIntroText,div.itemFullText {color:#444;font-size:17px;line-height:24px;padding:4px 0 12px 0;font-family: sans-serif;}
-	div.itemIntroText p strong,div.itemFullText p strong{font-size:17.4px;color:#767676}
+div.itemIntroText,div.itemFullText {color:#444;font-size:17px;line-height:24px;padding:4px 0 12px 0;font-family:"ClearSansRegular"}
+	div.itemIntroText p strong,div.itemFullText p strong{font-size:17.4px;color:#767676;font-family: "CenturyGothicRegular";}
 	div.itemIntroText img {}
 
 div.itemFullText {}
@@ -437,7 +437,7 @@ span.catItemEditLink a:hover {background:#ffffcc;}
 
 div.catItemHeader {}
 	div.catItemHeader span.catItemDateCreated {color:#999;font-size:11px;}
-	div.catItemHeader h3.catItemTitle {font-family:Georgia, "Times New Roman", Times, serif;font-size:24px;font-weight:normal;line-height:110%;padding:10px 0;border-bottom:1px solid #9A3680; margin:0;width: 88%}
+	div.catItemHeader h3.catItemTitle {font-family: "ClearSansRegular";font-size:24px;font-weight:normal;line-height:110%;padding:10px 0;border-bottom:1px solid #9A3680; margin:0;width: 88%}
 	div.catItemHeader h3.catItemTitle span {}
 	div.catItemHeader h3.catItemTitle span sup {font-size:12px;color:#CF1919;text-decoration:none;} /* superscript */
 	div.catItemHeader span.catItemAuthor {display:block;padding:0;margin:0;}
@@ -453,8 +453,10 @@ div.catItemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.catItemImage {display:block;text-align:center;margin:0 0 8px 0;}
 	span.catItemImage img {border:1px solid #ccc;padding:8px;}
 
-div.catItemIntroText {font-size:inherit;font-weight:normal;line-height:inherit;padding:4px 0 12px 0;font-size:17.5px;font-family:sans-serif;color:#353535}
+div.catItemIntroText {font-weight:normal;line-height:inherit;padding:4px 0 12px 0;font-size:17.5px;font-family:"ClearSansRegular";color:#353535}
 	div.catItemIntroText p{margin-bottom:3px}
+	div.catItemIntroText p strong{font-size:17.4px;color:#767676;font-family:"CenturyGothicRegular"}
+	
 	div.catItemIntroText img {}
 
 div.catItemExtraFields, div.genericItemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;}
@@ -1103,5 +1105,5 @@ dl#system-message{background-color:#CE3B3B;width:83%;position:absolute;left:6%;p
 #printer:hover,#sender:hover{color:#9B3881}
 .cornfieldH{font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0}
 .cornfield{font-weight:700;color:#333333;width:50%}
-.sense{color:#222222;font-size:17px}
+.sense{color:#3C3C3C;font-size:17.7px;font-weight:600}
 

@@ -1,13 +1,7 @@
 
-.sj-extraslider{
-	margin:80px 0;
-}
-
-.sj-extraslider a{
-	text-decoration:none;
-}
-
-.item-title a {color: #9A3680;font-size: 18px;}
+.sj-extraslider{margin:20px 0 100px 0}
+.sj-extraslider a{text-decoration:none}
+.item-title a{color:#3C3C3C;font-size:18px}
 
 .sj-extraslider a:hover{
 	text-decoration:underline;
@@ -18,16 +12,19 @@
 	margin:10px 0;
 }
 .sj-extraslider .heading-title{
-float: left;
-padding-bottom: 5px;
-border-bottom: 1px solid #777;
-width: 40%;
-top: -30px;
-left: 30px;
-font-size: 30px;
-color:#444444;
+width: 500px;
+min-height: 48px;
+background-color: #9A3680;
 font-family: ArsenalRegular;
-position: absolute;
+color: #FFFFFF;
+text-transform: uppercase;
+font-size: 26px;
+text-align: center;
+margin-left: 3%;
+line-height: 34px;
+font-weight: 300;
+padding-top: 14px;
+box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);
 }
 .sj-extraslider .extraslider-inner{
 	position: relative;

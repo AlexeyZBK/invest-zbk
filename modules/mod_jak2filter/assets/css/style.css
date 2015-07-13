@@ -375,9 +375,7 @@ ul.vertical-layout li {
 	position: relative;
 }
 
-ul.vertical-layout li label.group-label {
-	position: relative;
-}
+ul.vertical-layout li label.group-label {position: relative;font-family:"CenturyGothicRegular"}
 
 /* Ajax Loading */
 #jak2-loading {
