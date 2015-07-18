@@ -199,7 +199,7 @@ div.itemToolbar {padding:2px 0;margin:16px 0 0 0}
 div.itemRatingBlock {padding:8px 0;}
 	div.itemRatingBlock span {display:block;float:left;font-style:normal;padding:0 4px 0 0;margin:0;color:#999;}
 
-div.itemBody {padding:8px 0;margin:0 0 0 40px;width:100%;text-align:justify}
+div.itemBody {padding:8px 0;margin:0 0 0 40px;width:100%}
 
 div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImage {display:block;text-align:center;margin:0 0 8px 0;}
@@ -208,7 +208,7 @@ div.itemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.itemImageCredits {color:#999;float:right;display:block;font-style:italic;font-size:11px;}
 
 div.itemIntroText,div.itemFullText {color:#444;font-size:17px;line-height:24px;padding:4px 0 12px 0;font-family:"ClearSansRegular"}
-	div.itemIntroText p strong,div.itemFullText p strong{font-size:17.4px;color:#767676;font-family: "CenturyGothicRegular";}
+	div.itemIntroText p strong,div.itemFullText p strong{font-size:17.4px;color:#767676;}
 	div.itemIntroText img {}
 
 div.itemFullText {}
@@ -232,7 +232,7 @@ div.itemSocialSharing {padding:8px 0;}
 	div.itemFacebookButton {float:left;margin-right:24px;width:200px;}
 	div.itemGooglePlusOneButton {}
 
-div.itemLinks {margin:16px 0;padding:0;}
+div.itemLinks {margin:16px 0 0 40px;padding:0;border-top:1px solid #9A3680;width:100%}
 
 div.itemCategory {padding:4px;border-bottom:1px dotted #ccc;}
 	div.itemCategory span {font-weight:bold;color:#555;padding:0 4px 0 0;}
@@ -244,12 +244,12 @@ div.itemTagsBlock {padding:4px;border-bottom:1px dotted #ccc;}
 	div.itemTagsBlock ul.itemTags li a {}
 	div.itemTagsBlock ul.itemTags li a:hover {}
 
-div.itemAttachmentsBlock {padding:4px;border-bottom:1px dotted #ccc;}
+div.itemAttachmentsBlock {padding:8px;}
 	div.itemAttachmentsBlock span {font-weight:bold;color:#555;padding:0 4px 0 0;}
 	div.itemAttachmentsBlock ul.itemAttachments {list-style:none;padding:0;margin:0;display:inline;}
-	div.itemAttachmentsBlock ul.itemAttachments li {display:inline;list-style:none;padding:0 4px;margin:0;text-align:center;}
-	div.itemAttachmentsBlock ul.itemAttachments li a {}
-	div.itemAttachmentsBlock ul.itemAttachments li a:hover {}
+	div.itemAttachmentsBlock ul.itemAttachments li {display:block;list-style:none;padding:3px 16px;margin:0;text-align:left;font-size:15px}
+	div.itemAttachmentsBlock ul.itemAttachments li a {text-decoration:none;color:#822E6D;}
+	div.itemAttachmentsBlock ul.itemAttachments li a:hover {color:#222222}
 	div.itemAttachmentsBlock ul.itemAttachments li span {font-size:10px;color:#999;font-weight:normal;}
 
 /* Author block */
@@ -415,7 +415,7 @@ div.itemList {}
 	div#itemListPrimary {}
 	div#itemListSecondary {}
 	div#itemListLinks {background:#f7fafe;border:1px solid #ddd;margin:8px 0;padding:8px;}
-		div.itemList div.itemContainer:first-child{margin-top:30px}
+		div.itemList div.itemContainer:first-child{margin-top:30px;width:100%}
 		div.itemContainer {float:left;margin-top:26px;padding:0;box-shadow:4px 4px 18px -5px rgba(0,0,0,0.4);		background-color:#9A3680;margin-left:10px;min-height:240px}
 		div.itemContainerLast {} 
 		/* this class is appended to the last container on each row of items (useful when you want to set 0 padding/margin to the last container) */
@@ -453,9 +453,9 @@ div.catItemImageBlock {padding:8px;margin:0 0 16px 0;}
 	span.catItemImage {display:block;text-align:center;margin:0 0 8px 0;}
 	span.catItemImage img {border:1px solid #ccc;padding:8px;}
 
-div.catItemIntroText {font-weight:normal;line-height:inherit;padding:4px 0 12px 0;font-size:17.5px;font-family:"ClearSansRegular";color:#353535}
+div.catItemIntroText {font-weight:normal;line-height:inherit;padding:4px 0 12px 0;font-size:17.5px;font-family:"ClearSansRegular";color:#353535;padding-left:12px}
 	div.catItemIntroText p{margin-bottom:3px}
-	div.catItemIntroText p strong{font-size:17.4px;color:#767676;font-family:"CenturyGothicRegular"}
+	div.catItemIntroText p strong{font-size:17.4px;color:#767676;font-family:"ClearSansRegular"}
 	
 	div.catItemIntroText img {}
 

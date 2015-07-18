@@ -141,14 +141,14 @@ defined('_JEXEC') or die;
 			<?php if($this->item->params->get('itemVideoAnchor') && !empty($this->item->video)): ?>
 			<!-- Anchor link to item video below - if it exists -->
 			<li>
-				<a class="itemVideoLink k2Anchor" href="<?php echo $this->item->link; ?>#itemVideoAnchor"><?php echo JText::_('K2_MEDIA'); ?></a>
+				<a class="itemVideoLink k2Anchor" href="<?php echo $this->item->link; ?>#itemVideoAnchor"><i class="fa fa-video-camera"></i></a>
 			</li>
 			<?php endif; ?>
 
 			<?php if($this->item->params->get('itemImageGalleryAnchor') && !empty($this->item->gallery)): ?>
 			<!-- Anchor link to item image gallery below - if it exists -->
 			<li>
-				<a class="itemImageGalleryLink k2Anchor" href="<?php echo $this->item->link; ?>#itemImageGalleryAnchor"><?php echo JText::_('K2_IMAGE_GALLERY'); ?></a>
+				<a class="itemImageGalleryLink k2Anchor" href="<?php echo $this->item->link; ?>#itemImageGalleryAnchor"><i class="fa fa-camera"></i></a>
 			</li>
 			<?php endif; ?>
 

@@ -56,8 +56,8 @@ defined('_JEXEC') or die;
             <div class="heading-title"><?php echo $options->title_slider;?></div><!--end heading-title-->
         <?php }?>		    
     	<div class="extraslider-control  <?php if( $options->button_page == 'under' ){echo 'button-type2';}?>">
-		    <a class="button-prev" href="<?php echo '#'.$tag_id;?>" data-jslide="prev">&lt;</a>
-		    <span id="listin">Листать</span>
+		    <a class="button-prev" href="<?php echo '#'.$tag_id;?>" data-jslide="prev"><i class="fa fa-angle-left"></i></a>
+		    
 		    <?php if( $options->button_page == 'top' ){?>
 		    <ul class="nav-page">
 		    <?php $j = 0;$page = 0;
@@ -70,7 +70,7 @@ defined('_JEXEC') or die;
 	    		<?php }//}?>
 		    </ul>
 		    <?php }?>
-		    <a class="button-next" href="<?php echo '#'.$tag_id;?>" data-jslide="next">&gt;</a>
+		    <a class="button-next" href="<?php echo '#'.$tag_id;?>" data-jslide="next"><i class="fa fa-angle-right"></i></a>
 	    </div>
 	    <div class="extraslider-inner">
 	    <?php 
@@ -89,12 +89,14 @@ defined('_JEXEC') or die;
 					<div class="item-wrap <?php echo $options->theme;?>">
 						<div class="item-wrap-inner">
 							<?php $img = K2ExtrasliderHelper::getK2Image($item, $params);
+							$urlDoc = $_SERVER['REQUEST_URI'];
+							if (preg_match('/\/index.php\/ru\/gallery/', $urlDoc) == 1){							
 							if($img){
 							?>
 							<div class="item-image">
 								<?php   echo K2ExtrasliderHelper::imageTag($img);?>
 							</div>
-							<?php } ?>
+							<?php } }?>
 							<?php if( $options->item_title_display == 1 || $options->item_desc_display == 1 || ( $item->tags != '') || $options->item_readmore_display == 1 ){ ?>
 							<div class="item-info">
 							<?php if( $options->item_title_display == 1 ){?>

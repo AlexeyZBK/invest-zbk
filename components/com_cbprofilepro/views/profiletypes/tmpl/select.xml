@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CBPROFILEPRO_PROFILETYPES_VIEW_SELECT_TITLE">
+		<message>
+			<![CDATA[COM_CBPROFILEPRO_PROFILETYPES_VIEW_SELECT_DESC]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+			<field name="display_type" type="list" default="radio" label="COM_CBPROFILEPRO_FIELD_DISPLAY_TYPE_LABEL">
+				<option value="radio">COM_CBPROFILEPRO_FIELD_DISPLAY_TYPE_OPTION_RADIO_BUTTONS</option>
+				<option value="select">COM_CBPROFILEPRO_FIELD_DISPLAY_TYPE_OPTION_SELECT_LIST</option>
+				<option value="link">COM_CBPROFILEPRO_FIELD_DISPLAY_TYPE_OPTION_LINKS_LIST</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

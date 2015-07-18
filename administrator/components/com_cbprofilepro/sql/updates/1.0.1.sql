@@ -1,0 +1,1 @@
+RENAME TABLE `#__magicwindow_code` TO `#__cbppmagicwindow_code`;

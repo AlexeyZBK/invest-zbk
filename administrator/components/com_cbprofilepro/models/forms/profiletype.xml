@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="title" type="text" label="COM_CBPROFILEPRO_FIELD_TITLE_LABEL" class="inputbox input-xlarge input-large-text" size="40" required="true" />
+		<field name="alias" type="text" label="COM_CBPROFILEPRO_FIELD_ALIAS_LABEL" description="COM_CBPROFILEPRO_FIELD_ALIAS_DESC" hint="JFIELD_ALIAS_PLACEHOLDER" class="inputbox" size="40" />
+		<field name="description" type="textarea" label="COM_CBPROFILEPRO_FIELD_DESCRIPTION_LABEL" description="COM_CBPROFILEPRO_FIELD_DESCRIPTION_DESC"  rows="3" cols="40" class="inputbox input-xlarge" />
+		<field name="state" type="list" label="COM_CBPROFILEPRO_FIELD_STATUS_LABEL" class="inputbox chzn-color-state" filter="intval" size="1" default="1" >
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+		<field	name="default"	type="radio" label="COM_CBPROFILEPRO_FIELD_DEFAULT_LABEL" description="COM_CBPROFILEPRO_FIELD_DEFAULT_DESC"	default="0"	class="inputbox btn-group btn-group-yesno" filter="integer">
+			<option	value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+		<field	name="cb_template"	type="SQL" default="0" label="COM_CBPROFILEPRO_FIELD_CB_TEMPLATE_LABEL" description="COM_CBPROFILEPRO_FIELD_CB_TEMPLATE_DESC" query="SELECT name, element FROM #__comprofiler_plugin WHERE type='templates'" key_field="element" value_field="name" class="inputbox" >
+			<option value="0">COM_CBPROFILEPRO_FIELD_CB_TEMPLATE_OPTION_BY_CB_DEFAULT</option>
+		</field>
+		<field name="created_by" type="user" label="COM_CBPROFILEPRO_FIELD_CREATED_BY_LABEL" />
+		<field name="created" type="calendar" label="COM_CBPROFILEPRO_FIELD_CREATED_LABEL"	class="inputbox" size="22" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+		<field name="modified_by" type="user" label="COM_CBPROFILEPRO_FIELD_MODIFIED_BY_LABEL" class="readonly" readonly="true" filter="unset" />
+		<field name="modified" type="calendar" class="readonly" label="COM_CBPROFILEPRO_FIELD_MODIFIED_LABEL" description="COM_CBPROFILEPRO_FIELD_MODIFIED_DESC" size="22" readonly="true" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+		<field name="language" type="contentlanguage" label="COM_CBPROFILEPRO_FIELD_LANGUAGE_LABEL"	description="COM_CBPROFILEPRO_FIELD_LANGUAGE_DESC" class="inputbox">
+			<option value="*">JALL</option>
+		</field>
+		<field name="version" type="text" class="readonly" label="COM_CBPROFILEPRO_FIELD_VERSION_LABEL" size="5" description="COM_CBPROFILEPRO_FIELD_VERSION_DESC" readonly="true" filter="unset" />
+		<field name="profile" type="editor" class="inputbox" label="COM_CBPROFILEPRO_FIELD_PROFILE_LABEL" filter="CbprofileproHelper::filterText" buttons="true" />
+		<field name="profile_edit" type="editor" class="inputbox" label="COM_CBPROFILEPRO_FIELD_PROFILE_EDIT_LABEL" filter="CbprofileproHelper::filterText" buttons="true" />
+		<field name="registration" type="editor" class="inputbox" label="COM_CBPROFILEPRO_FIELD_REGISTRATION_LABEL" filter="CbprofileproHelper::filterText" buttons="true" />
+		<field name="id" type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL" description ="JGLOBAL_FIELD_ID_DESC" size="5" default="0" readonly="true"  />
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+		<field name="ordering" type="text" label="JFIELD_ORDERING_LABEL" description="JFIELD_ORDERING_DESC" class="inputbox" size="6" default="0" />
+	</fieldset>
+</form>

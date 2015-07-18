@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component" label="COM_CBPROFILEPRO_CONFIG_GENERAL_LABEL">
+		<field name="multiple" type="list" default="1" label="COM_CBPROFILEPRO_MULTIPLE_PROFILE_TYPES_LABEL" description="COM_CBPROFILEPRO_MULTIPLE_PROFILE_TYPES_DESC">
+			<option value="1">JENABLED</option>
+			<option value="0">JDISABLED</option>
+		</field>
+		<field name="profiletype_field" type="text" size="40" default="cb_profiletype" label="COM_CBPROFILEPRO_PROFILE_TYPE_FIELD_LABEL" description="COM_CBPROFILEPRO_PROFILE_TYPE_FIELD_DESC" />
+		<field name="template_rule" type="list" default="forall" label="COM_CBPROFILEPRO_TEMPLATE_RULE_LABEL" description="COM_CBPROFILEPRO_TEMPLATE_RULE_DESC">
+			<option value="forall">OPTION_FOR_ALL</option>
+			<option value="forone">OPTION_FOR_ONE</option>
+		</field>
+		<field name="show_title" type="list" default="1" label="COM_CBPROFILEPRO_SHOW_TITLE_LABEL" description="COM_CBPROFILEPRO_SHOW_TITLE_DESC">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		<field name="show_link" type="list" default="1" label="COM_CBPROFILEPRO_SHOW_LINK_LABEL" description="COM_CBPROFILEPRO_SHOW_LINK_DESC">
+			<option value="1">JSHOW</option>
+			<option value="0">JHIDE</option>
+		</field>
+		<field name="undefined_empty" type="list" default="cb_default" label="COM_CBPROFILEPRO_UNDEFINED_EMPTY_LABEL" description="COM_CBPROFILEPRO_UNDEFINED_EMPTY_DESC">
+			<option value="cb_default">OPTION_SHOW_DEFAULT_CB_PAGE</option>
+			<option value="error_message">OPTION_SHOW_ERROR_MESSAGE</option>
+		</field>
+		<field name="registration_empty" type="list" default="default_profiletype" label="COM_CBPROFILEPRO_REGISTRATION_EMPTY_LABEL" description="COM_CBPROFILEPRO_REGISTRATION_EMPTY_DESC">
+			<option value="cb_default">OPTION_SHOW_DEFAULT_CB_REG_PAGE</option>
+			<option value="default_profiletype">OPTION_SHOW_DEFAULT_PROFILETYPE_REG_PAGE</option>
+		</field>
+	</fieldset>
+	<fieldset name="recaptcha" label="COM_CBPROFILEPRO_CONFIG_RECAPTCHA_LABEL">
+		<field name="publickey" type="text" size="40" default="" label="COM_CBPROFILEPRO_PUBLICKEY_LABEL" description="COM_CBPROFILEPRO_PUBLICKEY_DESC" />
+		<field name="privatekey" type="text" size="40" default="" label="COM_CBPROFILEPRO_PRIVATEKEY_LABEL" description="COM_CBPROFILEPRO_PRIVATEKEY_DESC" />
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules"	type="rules" label="JCONFIG_PERMISSIONS_LABEL" class="inputbox"	validate="rules" filter="rules"	component="com_cbprofilepro" section="component" />
+	</fieldset>
+	<fieldset name="filters" addfieldpath="/administrator/components/com_cbprofilepro/models/fields" label="COM_CBPROFILEPRO_CONFIG_TEXT_FILTERS_LABEL" description="COM_CBPROFILEPRO_CONFIG_TEXT_FILTERS_DESC">
+		<field name="filters" type="filters" label="COM_CBPROFILEPRO_CONFIG_TEXT_FILTERS_LABEL"	class="inputbox" filter="" />
+	</fieldset>
+</config>

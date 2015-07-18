@@ -7,7 +7,6 @@ defined('_JEXEC') or die;
 <jdoc:include type="head" />
 <meta charset="UTF-8">
 <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/template.css"  rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700|Cuprum&subset=latin,cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <!----Обёртка--><section id="wrapper"><!--Обёртка---->
@@ -30,7 +29,7 @@ defined('_JEXEC') or die;
 <!---- Обращение Губернатора и блоки 6 причин инвестировать ---->
 <section id="first_block" class="">
 <!--Обращение Губернатора-->
-<div class=""><h1 class="h1_cept" name="obrashenie">Обращение Губернатора</h1></div><jdoc:include type="modules" name="obrashenie" /><span id="medved" style="display:block;position:fixed;height:300px;width:360px;top:250px;right:0px;background-image:url(images/banners/123321.png);visibility:hidden;"></span>
+<div class=""><h1 class="h1_cept" name="obrashenie">Обращение Губернатора</h1></div><jdoc:include type="modules" name="obrashenie" />
 <!--Обращение Губернатора-->
 <!------ РАЗДЕЛИТЕЛЬ МЕЖДУ ОБРАЩЕНИЕМ И 6 ПРИЧИН ------><div class="clearBoth"></div><!------ РАЗДЕЛИТЕЛЬ МЕЖДУ ОБРАЩЕНИЕМ И 6 ПРИЧИН ------>
 <!--6 причин-->
@@ -111,7 +110,7 @@ defined('_JEXEC') or die;
   
 <!-------------------------------------- ГАЛЕРЕЯ -->
   <section id="galereyaizk" class="block_content">
-                <div class=""><h1 class="h1_cept">Галерея</h1></div>
+                <div id="hGal" class=""><h1 class="h1_cept inter"><a href="index.php/ru/gallery">Галерея <i class="fa fa-sign-out"></i></a></h1></div>
         <article class="commented-wrap_content-commented"  style="width:100%; margin:16px auto; position:absolute;">
          <div style="width:100%;"><jdoc:include type="modules" name="galereya" /></div>
         </article>
@@ -131,8 +130,8 @@ defined('_JEXEC') or die;
 <!-------------------------------------- ФУТЕР ТУТ ВСЕ ПОНЯТНО -------------------------------------->
   <footer id="futer" class="">
   <!----<span id="pater"></span>---->
-  <div class="ppppp"><h1 class="h1_cept" style="width:100%;margin-left:0;min-height: 48px;background-color: #9A3680;font-family: ArsenalRegular;color: #FFFFFF;text-transform: uppercase;
-  font-size: 26px;text-align: center;line-height: 34px;font-weight: 300;padding-top: 14px;box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);"></h1></div>
+  <div class="ppppp"><h1 class="h1_cept" style="width:100%;margin-left:0;min-height:0;background-color: #302A25;font-family: ArsenalRegular;color: #FFFFFF;text-transform: uppercase;
+  font-size: 26px;text-align: center;line-height: 34px;font-weight: 300;padding-top: 14px;border-bottom:48px solid transparent;box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);"></h1></div>
     <article id="fromfoot" class="wrap_content">
       <aside id="ulfoot" class="foot1">
       <h1>О портале</h1>
@@ -178,9 +177,8 @@ defined('_JEXEC') or die;
 <!--ФУТЕР ТУТ ВСЕ ПОНЯТНО-->
 
 <!-------------------------------------- Обёртка--></section><!--Обёртка-->
-<div id="scroller"></div>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scroll_menu.js"></script>
-<script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.scrollspeed.js"></script>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scripts.js"></script>
 </body>
 </html>

@@ -184,11 +184,7 @@ z-index: 1;
 
 	/****************************************   СЛАЙДЕР = 1200рх =   ****************************************/
 
-.wrap_content {
-	position: relative;
-	max-width: 1240px;
-	margin: auto;
-}
+.wrap_content{position:relative;max-width:1240px;margin:auto;font-family:ArsenalRegular}
 
 /**************************************** ОБРАЩЕНИЕ ГУБЕРНАТОРА ****************************************/
 .secobrashenie {
@@ -447,7 +443,7 @@ max-width: 190px;
 max-height: 190px;
 min-width: 190px;
 min-height: 190px;
-background-color: rgba(154,54,128,0.75);
+background-color: rgba(154,54,128,1);
 border-radius: 66px 0px 66px 0px;
 color: #FFFFFF;
 font-size: 26px;
@@ -498,7 +494,7 @@ background-position: left bottom ;
 .circl_ppo {
 display: block;
 position: absolute;
-background-color: rgba(154,54,128,0.9); 
+background-color: rgba(154,54,128,1); 
 text-align: center;
 font-family: ArsenalRegular;
 color: #FFFFFF;
@@ -621,6 +617,7 @@ transform: translateY(-50%);
 
 /****************************************ГАЛЕРЕЯ****************************************/
 #galereyaizk {min-height: 760px;}
+.inter a:hover{color:#5E214F}
 /****************************************ГАЛЕРЕЯ****************************************/
 
 
@@ -685,7 +682,7 @@ width: 100%;
 top:38px;
 color: #FFFFFF;
 line-height: 22px;
-background-color: #9A3680;
+background-color: #302A25;
 }
 
 li.mapfoot {

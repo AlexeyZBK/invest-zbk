@@ -137,14 +137,14 @@
 .bt-cs .bt-inner img {max-width:99%;margin:5px 0px;}
 .bt-cs .bt-inner .bt-title {
 color: #FFFFFF;
-font-weight: bold;
 text-transform: uppercase;
 line-height: 150%;
 display: inline-block;
 position: absolute;
-top: 20px;
+top: 193px;
 left: 2px;
 font-family: ArsenalRegular;
+font-size:12px;
 text-align: center;
 font-weight: 500;
 width: 99%;

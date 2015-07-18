@@ -381,7 +381,7 @@ defined('_JEXEC') or die;
 		  <span><?php echo JText::_('K2_DOWNLOAD_ATTACHMENTS'); ?></span>
 		  <ul class="itemAttachments">
 		    <?php foreach ($this->item->attachments as $attachment): ?>
-		    <li>
+		    <li><i class="fa fa-download"></i>
 			    <a title="<?php echo K2HelperUtilities::cleanHtml($attachment->titleAttribute); ?>" href="<?php echo $attachment->link; ?>"><?php echo $attachment->title; ?></a>
 			    <?php if($this->item->params->get('itemAttachmentsCounter')): ?>
 			    <span>(<?php echo $attachment->hits; ?> <?php echo ($attachment->hits==1) ? JText::_('K2_DOWNLOAD') : JText::_('K2_DOWNLOADS'); ?>)</span>

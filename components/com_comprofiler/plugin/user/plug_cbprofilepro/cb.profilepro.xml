@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cbinstall version="1.0" type="plugin" group="user" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:../../../../../validation/ahawow.xsd">
+	<name>CB Profile Pro</name>
+	<creationDate>December 2014</creationDate>
+	<author>Joomduck</author>
+	<authorEmail>support@joomduck.com</authorEmail>
+	<authorUrl>http://www.joomduck.com</authorUrl>
+	<copyright>(C) 2009-2014 Joomduck. All rights reserved</copyright>
+	<license>GNU GPLv2 http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.0.0</version>
+	<release>1.5.1</release>
+	<description>This plugin provides 'Profile Pro' tab, profile type select field, reCaptcha support and some helping functions for Community Builder and Community Builder Profile Pro.</description>
+	<files>
+		<filename plugin="cb.profilepro">cb.profilepro.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params></params>
+	<tabs>
+		<tab name="Profile Pro" description="" class="getProfileProTab" fields="1" position="cb_tabmain" displaytype="html">
+			<params></params>
+			<fields>
+				<field name="cb_profiletype" type="profiletype_select" title="Тип профиля" description="Выберите тип профиля для Вашего аккаунта" required="0" registration="1" profile="1" readonly="0" />
+			</fields>
+		</tab>
+	</tabs>
+	<fieldtypes>
+		<field type="profiletype_select" label="Выбор типа профиля">
+			<data name="" nametype="namesuffix" type="sql:varchar(255)" null="true" default="NULL" strict="false" />
+			<params>
+				<tabpane name="field">
+					<tabpanetab label="Layout">
+						<showview view="fieldLayoutParams" mode="edit" type="view" />
+					</tabpanetab>
+					<tabpanetab label="Display">
+						<param name="display_type" type="list" default="select" label="Display type" description="">
+							<option value="select">Select list</option>
+							<option value="radio">Radio buttons</option>
+						</param>
+					</tabpanetab>
+				</tabpane>
+			</params>
+		</field>
+	</fieldtypes>
+	<install>
+		<queries></queries>
+	</install>
+	<uninstall>
+		<queries></queries>
+	</uninstall>
+	<database></database>
+</cbinstall>

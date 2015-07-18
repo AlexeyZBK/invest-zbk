@@ -7,7 +7,7 @@ class JConfig {
 	public $sitename = 'Инвестиционный портал Забайкальского края';
 	public $editor = 'jckeditor';
 	public $captcha = '0';
-	public $list_limit = '20';
+	public $list_limit = '100';
 	public $access = '1';
 	public $debug = '0';
 	public $debug_lang = '0';
@@ -28,7 +28,7 @@ class JConfig {
 	public $ftp_pass = '';
 	public $ftp_root = '';
 	public $ftp_enable = '0';
-	public $offset = 'UTC';
+	public $offset = 'Asia/Yakutsk';
 	public $mailonline = '1';
 	public $mailer = 'mail';
 	public $mailfrom = 'test@test.ru';
