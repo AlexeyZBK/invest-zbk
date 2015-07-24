@@ -93,18 +93,15 @@ elseif (preg_match('/\/zh/', $urlDoc) == 0) {print_r('<section id="maincontent">
 $urlDoc = $_SERVER['REQUEST_URI'];
 if (preg_match('/\/investitsionnye-predlozheniya$/', $urlDoc) == 0 || preg_match('/\/dokumenty$/', $urlDoc) == 0) {print_r('<aside id="modulesposition1" style=""><jdoc:include type="modules" name="mod1" /></aside><aside id="modulesposition2" style=""><jdoc:include type="modules" name="mod2" /></aside>');}
 ?>
-
 </main> 
-
 <!------ РАЗДЕЛИТЕЛЬ ------><div class="clearBoth"></div><!------ РАЗДЕЛИТЕЛЬ ------>
 <!-------------------------------------- ФУТЕР ТУТ ВСЕ ПОНЯТНО -------------------------------------->
 
-  <footer id="futer" class="">
-  <!----<span id="pater"></span>---->
-  <div class="ppppp"><h1 class="h1_cept" style="width:100%;margin-left:0;min-height:0;background-color: #302A25;font-family: ArsenalRegular;color: #FFFFFF;text-transform: uppercase;
-  font-size: 26px;text-align: center;line-height: 34px;font-weight: 300;padding-top: 14px;border-bottom:48px solid transparent;box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);"></h1></div>
-    <article id="fromfoot" class="wrap_content">
-      <aside id="ulfoot" class="foot1">
+<footer id="futer" class="">
+<!----<span id="pater"></span>---->
+<div class="ppppp"><h1 class="h1_cept" style="width:100%;margin-left:0;min-height:0;background-color: #302A25;font-family: ArsenalRegular;color: #FFFFFF;text-transform: uppercase;font-size: 26px;text-align: center;line-height: 34px;font-weight: 300;padding-top: 14px;border-bottom:48px solid transparent;box-shadow: 0 4px 5px -2px rgba(153,153,153,0.8);"></h1></div>
+<article id="fromfoot" class="wrap_content">
+<aside id="ulfoot" class="foot1">
 <h1>
 <?php
 $urlDoc = $_SERVER['REQUEST_URI'];
@@ -208,25 +205,26 @@ $urlDoc = $_SERVER['REQUEST_URI'];
 if (preg_match('/\/zh/', $urlDoc) == 1) {print_r('通讯订阅');}
 elseif (preg_match('/\/zh/', $urlDoc) == 0) {print_r('Подписка на рассылку');}
 ?></h1>
-      <jdoc:include type="modules" name="mail-responder" />
+<jdoc:include type="modules" name="mail-responder" />
 <!------ РАЗДЕЛИТЕЛЬ ------><div class="clearBoth"></div><!------ РАЗДЕЛИТЕЛЬ ------>
-      <ul id="socialcollbut">
-        <li id="socibut" class="socibut1" title="Поделиться | Вконтакте"></li>
-        <li id="socibut" class="socibut2" title="Поделиться | Одноклассники"></li>
-        <li id="socibut" class="socibut3" title="Поделиться | Mail.ru"></li>
-        <li id="socibut" class="socibut4" title="Поделиться | Яндекс"></li>
-        <li id="socibut" class="socibut5" title="Поделиться | Google+"></li>
-        <li id="socibut" class="socibut6" title="Поделиться | Twitter"></li>
-        <li id="socibut" class="socibut7" title="Поделиться | RSS лентой"></li>
-        <li id="socibut" class="socibut8" title="Поделиться | На почту другу"></li>
-      </ul>
-      </aside>      
-    </article>
-    <section id="froobottom"></section>
-  </footer>
+<ul id="socialcollbut">
+<li id="socibut" class="socibut1" title="Поделиться | Вконтакте"></li>
+<li id="socibut" class="socibut2" title="Поделиться | Одноклассники"></li>
+<li id="socibut" class="socibut3" title="Поделиться | Mail.ru"></li>
+<li id="socibut" class="socibut4" title="Поделиться | Яндекс"></li>
+<li id="socibut" class="socibut5" title="Поделиться | Google+"></li>
+<li id="socibut" class="socibut6" title="Поделиться | Twitter"></li>
+<li id="socibut" class="socibut7" title="Поделиться | RSS лентой"></li>
+<li id="socibut" class="socibut8" title="Поделиться | На почту другу"></li>
+</ul>
+</aside>      
+</article>
+<section id="froobottom"></section>
+</footer>
 <!--ФУТЕР ТУТ ВСЕ ПОНЯТНО-->
-
-<!-------------------------------------- Обёртка--></section><!--Обёртка-->
+<!-------------------------------------- Обёртка-->
+</section>
+<!--Обёртка-->
 <span id="modalOrphus" style=""><jdoc:include type="modules" name="Orphus" /></span>
 <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/scripts.js"></script>
 </body>
