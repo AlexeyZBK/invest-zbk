@@ -449,11 +449,14 @@ frameEditorZ.contentWindow.document.body.innerHTML = '<p><strong>Тип: </stron
 <div id="modalkaZ">
 <a id="closerZ" onclick="closerZ()" href="#"><i class="fa fa-times"></i></a>
 <div class="wrappp">
-<input class="inputtxt" id="typeZ" list="TypeZz" placeholder="Выберите тип площадки">
+<input class="inputtxt" id="typeZ" list="TypeZz" placeholder="Выберите тип площадки или объекта">
 <datalist id="TypeZz">
-<option value="Промышленно-производственные">1</option>
-<option value="Агропромышленные">2</option>
-<option value="Туристическо-рекреационные">2</option>
+<option value="Промышленно-производственные">площадки</option>
+<option value="Агропромышленные">площадки</option>
+<option value="Туристическо-рекреационные">площадки</option>
+<option value="Земельный участок">объект</option>
+<option value="Строение">объект</option>
+<option value="Помещение">объект</option>
 </datalist>
 <br><br>
 <input class="inputtxt" id="categoryZ" list="CategoryZz" placeholder="Категория земельного участка">
@@ -512,8 +515,8 @@ frameEditorZ.contentWindow.document.body.innerHTML = '<p><strong>Тип: </stron
 <button id="buttonSenderZ" type="button" onclick="copyZ();">Заполнить поля</button>
 </div>
 </div>
-<button type="button" onclick="openForm()" class="button">Форму для проектов</button>
-<button type="button" onclick="openFormZ()" class="button">Форму для площадок и объектов</button>
+<button type="button" onclick="openForm()" class="button">Проекты</button>
+<button type="button" onclick="openFormZ()" class="button">Площадки и объекты</button>
 
 									<?php if(count(array_filter($this->K2PluginsItemOther)) && $this->params->get('showK2Plugins')): ?>
 									<li id="tabPlugins"><a href="#k2Tab7"><?php echo JText::_('K2_PLUGINS'); ?></a></li>

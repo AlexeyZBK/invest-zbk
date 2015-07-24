@@ -1,6 +1,80 @@
 jQuery(document).ready(function($) {
 /*$(document).keyup(function(event){if (event.keyCode == 123) {window.location.href = "http://programmerzz.ru";}});*/
 $('div.logotype p img').attr('id', 'logo');
+////////////////// ШИРИНА МЕНЮ
+var widthMenu=0;
+$('#menu > .item1').each(function(index, el) {
+    widthMenu += $(this).width();
+    return widthMenu
+});
+widthMenu+=20;
+$('#menu').width(widthMenu);
+
+///////////////////////////////////////////////////////////////картинка на родительских пунктах меню
+$('.separator').click(function() {
+    var tester = $('.nav-child').css('top');
+    if(tester == '-1000px'){
+       var loca = window.location.origin;
+        $(this).css('background-image', 'url('+loca+'/investportal/images/pbebanactive.png)');
+    setTimeout(function(){$('.nav-child').css('z-index','1');}, 600);
+    $('.nav-child').css('display','block');
+    $('.nav-child').animate({top: '100px'}, 500);
+    }
+    else if (tester == '100px') {
+         $(this).css('background-image', 'url(/investportal/images/pbeban.png)');
+        $('.nav-child').css('z-index','-1');
+        $('.nav-child').animate({top: '-1000px'}, 500);
+        setTimeout(function(){$('.nav-child').css('display','none');}, 300);
+    }
+});
+//////////////////////////////////////////////////////////// определение документов
+$('.catItemView').each(function(index, el) {
+   var statusDocumenta = $(this).find('.typeRadio .catItemExtraFieldsValue').text();
+   if(statusDocumenta == 'Действующий'){
+    $(this).css('border-color', '#399B38');
+   }
+   else if(statusDocumenta == 'Не вступил в силу'){
+    $(this).css('border-color', '#EDF005');
+   }
+   else if(statusDocumenta == 'Утратил силу'){
+    $(this).css('border-color', 'red');
+   }
+});
+
+
+////////////////////////////////////////////////////////////
+$(window).scroll(function() {
+    var hideOrphus = $(this).scrollTop();
+    if (hideOrphus > 1 ) $('#modalOrphus').css('display','none');
+    else if (hideOrphus < 1 ) $('#modalOrphus').css('display','block');
+});
+//////////////////////////////////////// Горизонтальное меню
+    $('#next').click(function(){
+     var menu = $('#menu');
+           var menuML = $('#menu').css('margin-left');
+menuML = parseInt(menuML)  -480;
+     result = menu.animate({'margin-left': menuML}, 500);
+      return result;
+    });
+  
+      $('#prev').click(function(){
+     var menu = $('#menu');
+           var menuML = $('#menu').css('margin-left');
+menuML = parseInt(menuML)  +480;
+     result = menu.animate({'margin-left': menuML}, 500);
+      return result;
+    });
+//////////////////////////////////////// Горизонтальное меню
+$('.subCategory').attr('style', 'height:150px');
+var urlDoc = window.location.pathname;
+var investpredlozheniya = /investitsionnye-predlozheniya$/gm;
+if (urlDoc.search(investpredlozheniya)  != -1  ) {
+$('.subCategory').hover(function() {
+    $(this).find('.subCategoryImage img').attr('src', '/investportal/media/k2/categories/34H.png');
+}, function() {
+    $(this).find('.subCategoryImage img').attr('src', '/investportal/media/k2/categories/34.png');
+});
+};
 /********************************************************** SCROLLER **********************************************************/
 // Scroll Variables (tweakable)
 var framerate = 150; // [Hz]    150

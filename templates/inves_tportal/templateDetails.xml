@@ -19,6 +19,7 @@
 		<folder>fonts</folder>
 	</files>
 	<positions>
+		<position>lang</position>
 		<position>logo</position>
 		<position>debug</position>
 		<position>menu</position>

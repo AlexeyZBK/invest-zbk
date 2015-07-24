@@ -48,5 +48,6 @@ class JCKPublisher extends JCKToolbar {
 	public $Preview = '11';
 	public $UIColor = '11';
 	public $About = '11';
+	public $Inserthtml = '';
 }
 ?>

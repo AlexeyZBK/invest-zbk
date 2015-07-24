@@ -29,5 +29,6 @@ class JCKBlog extends JCKToolbar {
 	public $BGColor = '7';
 	public $Maximize = '8';
 	public $About = '8';
+	public $Inserthtml = '';
 }
 ?>

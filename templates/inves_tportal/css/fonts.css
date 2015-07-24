@@ -82,3 +82,24 @@
     font-style: normal;
     font-weight: normal;
 }
+
+@font-face {
+    font-family: "AgoraSansProMedium";
+    src: url("../fonts/AgoraSansProMedium/AgoraSansProMedium.eot");
+    src: url("../fonts/AgoraSansProMedium/AgoraSansProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AgoraSansProMedium/AgoraSansProMedium.woff") format("woff"),
+    url("../fonts/AgoraSansProMedium/AgoraSansProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "AgoraSansProRegular"; */
+@font-face {
+    font-family: "AgoraSansProRegular";
+    src: url("../fonts/AgoraSansProRegular/AgoraSansProRegular.eot");
+    src: url("../fonts/AgoraSansProRegular/AgoraSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/AgoraSansProRegular/AgoraSansProRegular.woff") format("woff"),
+    url("../fonts/AgoraSansProRegular/AgoraSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

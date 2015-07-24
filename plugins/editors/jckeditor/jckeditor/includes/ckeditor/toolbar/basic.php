@@ -34,5 +34,6 @@ class JCKBasic extends JCKToolbar {
 	public $Styles = '9';
 	public $CreateDiv = '10';
 	public $ShowBlocks = '10';
+	public $Inserthtml = '';
 }
 ?>

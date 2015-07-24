@@ -138,7 +138,7 @@ div.userItemIsFeatured {background:url(../images/system/featuredItem.png) no-rep
 a.itemPrintThisPage {display:block;width:160px;margin:4px auto 16px;padding:4px;background:#F7FAFE;border:1px solid #ccc;text-align:center;color:#555;font-size:13px;}
 a.itemPrintThisPage:hover {background:#eee;text-decoration:none;}
 
-div.itemView {padding:8px 0 24px 0;margin:0 0 24px 0;border-bottom:1px dotted #ccc;} /* this is the item container for this view */
+div.itemView {padding:8px 0 24px 0;margin:0 0 24px 0} /* this is the item container for this view */
 div.itemIsFeatured {} /* Attach a class for each featured item */
 
 span.itemEditLink {float:right;display:block;padding:4px 0;margin:0;width:120px;text-align:right;}
@@ -215,6 +215,7 @@ div.itemFullText {}
 	div.itemFullText h3 {margin:0;padding:16px 0 4px 0;}
 	div.itemFullText p {margin-bottom:4px}
 	div.itemFullText img {}
+	div.itemFullText a,div.itemFullText p a,div.itemFullText div a {text-decoration:none;color:#444444;padding-bottom:2px;border-bottom:1px solid #777}
 
 div.itemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;display:none}
 	div.itemExtraFields h3 {margin:0;padding:0 0 8px 0;line-height:normal !important}
@@ -396,18 +397,20 @@ div.itemListCategory {}
 
 /* --- Sub-category block --- */
 div.itemListSubCategories {}
-	div.itemListSubCategories h3 {}
-		div.subCategoryContainer {float:left;}
-		div.subCategoryContainerLast {} /* this class is appended to the last container on each row of items (useful when you want to set 0 padding/margin to the last container) */
-			div.subCategory {background:#f7fafe;border:1px solid #ddd;margin:4px;padding:8px;}
-				div.subCategory a.subCategoryImage,
-				div.subCategory a.subCategoryImage:hover {text-align:center;display:block;}
-				div.subCategory a.subCategoryImage img,
-				div.subCategory a.subCategoryImage:hover img {background:#fff;padding:4px;border:1px solid #ddd;margin:0 8px 0 0;}
-				div.subCategory h2 {}
-				div.subCategory h2 a {}
-				div.subCategory h2 a:hover {}
-				div.subCategory p {}
+div.itemListSubCategories h3 {}
+div.subCategoryContainer {float:left;}
+div.subCategoryContainerLast {} /* this class is appended to the last container on each row of items (useful when you want to set 0 padding/margin to the last container) */
+div.subCategory {background:#9A3680;border:1px solid #ddd;margin:4px;padding:8px;-ms-transition:all 0.7s;-webkit-transition:all 0.7s;transition:all 0.7s}
+div.subCategory:hover {background:#484848}
+div.subCategory a.subCategoryImage,
+div.subCategory a.subCategoryImage:hover {text-align:center;display:block;}
+div.subCategory a.subCategoryImage img,
+div.subCategory a.subCategoryImage:hover img {}
+div.subCategory h2 {text-align:center;margin-top:20px}
+div.subCategory h2 a {display:block;text-decoration:none;color:#FFF;text-transform:uppercase;font-family:ArsenalRegular;font-size:20px}
+div.subCategory h2 a:hover {text-decoration:underline}
+div.subCategory h2 a:hover {}
+div.subCategory p {}
 
 /* --- Item groups --- */
 div.itemList {}
@@ -459,7 +462,7 @@ div.catItemIntroText {font-weight:normal;line-height:inherit;padding:4px 0 12px 
 	
 	div.catItemIntroText img {}
 
-div.catItemExtraFields, div.genericItemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;}
+div.catItemExtraFields, div.genericItemExtraFields {margin:16px 0 0 0;padding:8px 0 0 0;border-top:1px dotted #ddd;display:none}
 	div.catItemExtraFields h4, div.genericItemExtraFields h4 {margin:0;padding:0 0 8px 0;line-height:normal !important;}
 	div.catItemExtraFields ul, div.genericItemExtraFields ul {margin:0;padding:0;list-style:none;}
 	div.catItemExtraFields ul li, div.genericItemExtraFields ul li {display:block;}
@@ -1097,7 +1100,7 @@ div.k2UsersBlock ul li ul.ubUserItems li {}
 
 #contentCom{min-height:1000px;}
 #maincontent{position:relative;width:60%;margin-bottom:10%;top:30px}
-#modulesposition1{position:fixed;top:220px;right:36px;width:30%}
+#modulesposition1{position:fixed;top:128px;right:36px;width:30%}
 dl#system-message{background-color:#CE3B3B;width:83%;position:absolute;left:6%;padding:60px;font-size:38px;top:96px;  box-shadow:-4px 4px 18px -5px rgba(0,0,0,0.4);color:#FaFaFa;line-height:88px}
 #system-message dt{}
 .fuck ul li{}
@@ -1106,4 +1109,8 @@ dl#system-message{background-color:#CE3B3B;width:83%;position:absolute;left:6%;p
 .cornfieldH{font-size:22px;font-weight:700;border-bottom:1px solid #9B3881;padding-bottom:8px;margin:16px 0}
 .cornfield{font-weight:700;color:#333333;width:50%}
 .sense{color:#3C3C3C;font-size:17.7px;font-weight:600}
-
+.moduletable h3{padding:7px 10px 5px 0;line-height:22px;text-align:right;background-color:#333;color:#FFF;box-shadow:0 4px 5px -2px rgba(153,153,153,0.8);font-weight:300;margin-bottom:15px;font-family:ArsenalRegular;text-transform:uppercase}
+#standartiASI{box-shadow:0px 0px 22px -6px rgba(0,0,0,0.4)}
+#standartiASI li a{display:block;padding:7px 7px;background:#FCFCFC;text-decoration:none;color:#2B2B2B;text-transform:uppercase;font-size:15px;line-height:20px;font-family:ArsenalRegular;margin-bottom:12px;-ms-transition:all 0.5s;-webkit-transition:all 0.5s;transition:all 0.5s}
+#standartiASI li a:hover{background:#555;color:#FFF}
+#standartiASI li.active a{background:#9B3881;color:#FFF}

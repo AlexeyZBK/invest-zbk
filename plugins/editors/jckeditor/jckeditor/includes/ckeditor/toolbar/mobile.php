@@ -19,5 +19,6 @@ class JCKMobile extends JCKToolbar {
 	public $TextColor = '7';
 	public $BGColor = '7';
 	public $Maximize = '7';
+	public $Inserthtml = '';
 }
 ?>

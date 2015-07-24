@@ -74,7 +74,7 @@ defined('_JEXEC') or die;
 		<?php if($this->params->get('subCategories') && isset($this->subCategories) && count($this->subCategories)): ?>
 		<!-- Subcategories -->
 		<div class="itemListSubCategories">
-			<h3><?php echo JText::_('K2_CHILDREN_CATEGORIES'); ?></h3>
+			<!--<h3><?php echo JText::_('K2_CHILDREN_CATEGORIES'); ?></h3>-->
 
 			<?php foreach($this->subCategories as $key=>$subCategory): ?>
 
@@ -109,10 +109,17 @@ defined('_JEXEC') or die;
 					<p><?php echo $subCategory->description; ?></p>
 					<?php endif; ?>
 
-					<!-- Subcategory more... -->
-					<a class="subCategoryMore" href="<?php echo $subCategory->link; ?>">
-						<?php echo JText::_('K2_VIEW_ITEMS'); ?>
-					</a>
+					<div>
+                    <?php    $html = array();
+                    foreach($this->leading as $item): 
+                    $this->item=$item;
+                    if(!$html[$this->item->category->id])
+                    $html[$this->item->category->id] = $this->item->category->name.'<br>'.$this->item->category->description;
+                    $html[$this->item->category->id] .= $this->loadTemplate('item');
+                    endforeach; 
+                    foreach ($html as $h)
+                    echo $h; ?>
+                    </div>
 
 					<div class="clr"></div>
 				</div>

@@ -65,5 +65,6 @@ class JCKFull extends JCKToolbar {
 	public $Video = '12';
 	public $Audio = '12';
 	public $UIColor = '12';
+	public $Inserthtml = '';
 }
 ?>

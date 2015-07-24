@@ -11,10 +11,8 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-<div id="navigate">
      <a id="prev">&lt;</a>
      <a id="next">&gt;</a>
-</div>
 <?php // The menu class is deprecated. Use nav instead. ?>
 
 <nav id="sidebar">

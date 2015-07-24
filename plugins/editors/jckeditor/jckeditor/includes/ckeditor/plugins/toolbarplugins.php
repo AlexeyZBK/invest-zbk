@@ -78,5 +78,6 @@ class JCKToolbarPlugins extends JCKPlugins {
 	public $list = '1';
 	public $pastefromword = '1';
 	public $autogrow = '0';
+	public $inserthtml = '1';
 }
 ?>
